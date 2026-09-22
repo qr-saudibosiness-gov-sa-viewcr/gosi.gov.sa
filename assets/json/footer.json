@@ -1,0 +1,1050 @@
+{
+    "uatArFooter": {
+        "FooterMenuList": [
+            {
+                "Created": null,
+                "ID": 11,
+                "Title": "روابط مهمة",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "وزارة المالية",
+                        "Icon": "",
+                        "RouterLink": "https://www.mof.gov.sa/Pages/default.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "وزارة الموارد البشرية والتنمية الاجتماعية ",
+                        "Icon": "",
+                        "RouterLink": "https://hrsd.gov.sa/"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "البوابة الوطنية للتعاملات الإلكترونية",
+                        "Icon": "",
+                        "RouterLink": "https://www.my.gov.sa"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الجمعية الدولية للضمان الاجتماعي (ISSA)",
+                        "Icon": "",
+                        "RouterLink": "https://ww1.issa.int/"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "منصة المشاركة الإلكترونية",
+                        "Icon": "",
+                        "RouterLink": "https://eparticipation.my.gov.sa/"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الإستراتيجية الوطنية للبيانات و الذكاء الاصطناعي",
+                        "Icon": "",
+                        "RouterLink": "https://ai.sa/index-ar.html"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "منصة البيانات المفتوحة",
+                        "Icon": "",
+                        "RouterLink": "https://od.data.gov.sa/ar"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 12,
+                "Title": "قنوات التواصل الاجتماعي",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "فيسبوك",
+                        "Icon": "icon-facebook1",
+                        "RouterLink": "https://www.facebook.com/SaudiGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "تويتر",
+                        "Icon": "icon-twitter1",
+                        "RouterLink": "https://x.com/SaudiGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "لينكد ان",
+                        "Icon": "icon-linkedin1",
+                        "RouterLink": "https://www.linkedin.com/company/general-organization-for-social-insurance"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "يوتيوب",
+                        "Icon": "icon-youtube1",
+                        "RouterLink": "https://www.youtube.com/user/SaudiGOSI"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 13,
+                "Title": "تطبيقات الجوال ",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "متجر أبل",
+                        "Icon": "assets/images/apple-app-store-transparent-236e0741.svg",
+                        "RouterLink": "/ar/MobileApp"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "متجر جوجل",
+                        "Icon": "assets/images/google-play-store-transparent-4a34ba3a.svg",
+                        "RouterLink": "/ar/MobileApp"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "متجر هواوي",
+                        "Icon": "assets/images/huaweiApp.svg",
+                        "RouterLink": "/ar/MobileApp"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 6,
+                "Title": "العنوان الوطني Old",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "RCRC3650",
+                        "Icon": "https://staging-cms.gosi.gov.sa/PublishingImages/GOSIAddress.webp",
+                        "RouterLink": "https://goo.gl/maps/2f6rowtHdRZWkb57A"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 14,
+                "Title": "الرقم المجاني",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "8001243344",
+                        "Icon": "",
+                        "RouterLink": "tel:8001243344"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 10,
+                "Title": "الدعم والمساندة",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "اتصل بنا",
+                        "Icon": "",
+                        "RouterLink": "ar/ContactUs"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الأسئلة الشائعة",
+                        "Icon": "",
+                        "RouterLink": "/ContactUs/Faq/BySubject"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "المشاركة الإلكترونية",
+                        "Icon": "",
+                        "RouterLink": "https://uat-www.gosi.gov.sa/ar/CommunityParticipation"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "بلاغ عن فساد",
+                        "Icon": "",
+                        "RouterLink": "https://uat-www.gosi.gov.sa/ar"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "خريطة الموقع",
+                        "Icon": "",
+                        "RouterLink": "/SiteMap"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "التوظيف",
+                        "Icon": "",
+                        "RouterLink": "https://staging-jobs.pension.gov.sa/"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 9,
+                "Title": "عن المؤسسة",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "عن المؤسسة",
+                        "Icon": "",
+                        "RouterLink": "/AboutGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الأخبار و الفعاليات",
+                        "Icon": "",
+                        "RouterLink": "/MediaCenter"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "اتفاقية الاستخدام",
+                        "Icon": "",
+                        "RouterLink": "/Pages/TermsofUse"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الخصوصية وسرية المعلومات",
+                        "Icon": "",
+                        "RouterLink": "/Pages/PrivacyPolicy"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "سياسة حرية الوصول للمعلومة",
+                        "Icon": "",
+                        "RouterLink": "https://uat-www.gosi.gov.sa/ar/Pages/Info-Rights.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "اتفاقية مستوى الخدمة",
+                        "Icon": "",
+                        "RouterLink": "https://uat-gov.sa/ar/Pages/SLA.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "الشروط والأحكام",
+                        "Icon": "",
+                        "RouterLink": "/_layouts/15/guestaccess.aspx?guestaccesstoken=kG1gqVSSnNIMv8X9FjVIt7DXZPpfuA6SSvYED3Z%2fa98%3d&docid=2_0cbda01c81a8148b8ac05e48b5379e6df&rev=1"
+                    }
+                ]
+            }
+        ],
+        "LastPublishedDate": "2024/08/06 08:59:51 AM",
+        "SeoMetaDescription": "test",
+        "SeoKeywords": "test2",
+        "ReturnCode": 0,
+        "Message": "",
+        "ControlValidations": []
+    },
+    "uatEnFooter": {
+        "FooterMenuList": [
+            {
+                "Created": null,
+                "ID": 2,
+                "Title": "Assistance And Support",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Contact Us",
+                        "Icon": "",
+                        "RouterLink": "/ContactUs"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "FAQ",
+                        "Icon": "",
+                        "RouterLink": "/ContactUs/Faq/ByUser"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Electronic Participation",
+                        "Icon": "",
+                        "RouterLink": "https://gosi.gov.sa/en/CommunityParticipation"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Corruption report",
+                        "Icon": "",
+                        "RouterLink": "https://www.gosi.gov.sa/en/Pages/ReportCorruption.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Site Map",
+                        "Icon": "",
+                        "RouterLink": "/SiteMap"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Careers",
+                        "Icon": "",
+                        "RouterLink": "https://career.gosi.gov.sa/en"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 1,
+                "Title": "Important Links",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Ministry of Finance",
+                        "Icon": "",
+                        "RouterLink": "https://www.mof.gov.sa/Pages/default.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Ministry of Human Resources and Social Development",
+                        "Icon": "",
+                        "RouterLink": "https://hrsd.gov.sa/en/node"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Saudi E-Government National Portal",
+                        "Icon": "",
+                        "RouterLink": "https://www.my.gov.sa"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "International Social Security Association  (ISSA)",
+                        "Icon": "",
+                        "RouterLink": "https://ww1.issa.int/"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "E-Participation Platform",
+                        "Icon": "",
+                        "RouterLink": "https://eparticipation.my.gov.sa/en/"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "National Strategy For Data And AI",
+                        "Icon": "",
+                        "RouterLink": "https://ai.sa/index.html"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "OpenData",
+                        "Icon": "",
+                        "RouterLink": "https://od.data.gov.sa/en"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 4,
+                "Title": "Social Media Channels",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Facebook",
+                        "Icon": "icon-facebook1",
+                        "RouterLink": "https://www.facebook.com/SaudiGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Twitter",
+                        "Icon": "icon-twitter1",
+                        "RouterLink": "https://x.com/SaudiGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Linked In",
+                        "Icon": "icon-linkedin1",
+                        "RouterLink": "https://www.linkedin.com/company/general-organization-for-social-insurance"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Youtube",
+                        "Icon": "icon-youtube1",
+                        "RouterLink": "https://www.youtube.com/user/SaudiGOSI"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 5,
+                "Title": "Mobile Apps",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Apple Store",
+                        "Icon": "assets/images/apple-app-store-transparent-236e0741.svg",
+                        "RouterLink": "/MobileApp"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Google Play",
+                        "Icon": "assets/images/google-play-store-transparent-4a34ba3a.svg",
+                        "RouterLink": "/MobileApp"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "متجر هواوي",
+                        "Icon": "assets/images/huaweiApp.svg",
+                        "RouterLink": "/MobileApp"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 7,
+                "Title": "Toll Free",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "8001243344",
+                        "Icon": "",
+                        "RouterLink": "tel:8001243344"
+                    }
+                ]
+            },
+            {
+                "Created": null,
+                "ID": 3,
+                "Title": "About GOSI",
+                "MenuList": [
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "About Us",
+                        "Icon": "",
+                        "RouterLink": "https://gosi.gov.sa/en/AboutGOSI"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "News And Events",
+                        "Icon": "",
+                        "RouterLink": "https://gosi.gov.sa/en/MediaCenter"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Terms Of Use",
+                        "Icon": "",
+                        "RouterLink": "/Pages/TermsofUse"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Privacy and Data Confidentiality",
+                        "Icon": "",
+                        "RouterLink": "/Pages/PrivacyPolicy"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Freedom of information policy",
+                        "Icon": "",
+                        "RouterLink": "https://gosi.gov.sa/en/Pages/Info-Rights.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Service level agreement",
+                        "Icon": "",
+                        "RouterLink": "https://gosi.gov.sa/en/Pages/SLA.aspx"
+                    },
+                    {
+                        "Created": null,
+                        "ID": 0,
+                        "Title": "Terms and Conditions",
+                        "Icon": "",
+                        "RouterLink": "/Pages/TermsandConditions.aspx"
+                    }
+                ]
+            }
+        ],
+        "LastPublishedDate": "2024/07/31 10:21:42 AM",
+        "SeoMetaDescription": null,
+        "SeoKeywords": null,
+        "ReturnCode": 0,
+        "Message": "",
+        "ControlValidations": []
+    },
+    "prodArFooter": {
+      "FooterMenuList": [
+        {
+          "Created": null,
+          "ID": 11,
+          "Title": "روابط مهمة",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "وزارة المالية",
+              "Icon": "",
+              "RouterLink": "https://www.mof.gov.sa/Pages/default.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "وزارة الموارد البشرية والتنمية الاجتماعية ",
+              "Icon": "",
+              "RouterLink": "https://hrsd.gov.sa/"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "المنصة الوطنية",
+              "Icon": "",
+              "RouterLink": "https://my.gov.sa/ar"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الجمعية الدولية للضمان الاجتماعي (ISSA)",
+              "Icon": "",
+              "RouterLink": "https://ww1.issa.int/"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "منصة المشاركة الإلكترونية",
+              "Icon": "",
+              "RouterLink": "https://eparticipation.my.gov.sa/"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الإستراتيجية الوطنية للبيانات و الذكاء الاصطناعي",
+              "Icon": "",
+              "RouterLink": "https://ai.sa/index-ar.html"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "منصة البيانات المفتوحة",
+              "Icon": "",
+              "RouterLink": "https://od.data.gov.sa/ar"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 12,
+          "Title": "قنوات التواصل الاجتماعي",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "فيسبوك",
+              "Icon": "icon-facebook1",
+              "RouterLink": "https://www.facebook.com/SaudiGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "تويتر",
+              "Icon": "icon-twitter2",
+              "RouterLink": "https://x.com/SaudiGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "لينكد ان",
+              "Icon": "icon-linkedin1",
+              "RouterLink": "https://www.linkedin.com/company/general-organization-for-social-insurance"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "يوتيوب",
+              "Icon": "icon-youtube1",
+              "RouterLink": "https://www.youtube.com/user/SaudiGOSI"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 13,
+          "Title": "تطبيقات الجوال ",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "متجر أبل",
+              "Icon": "assets/images/apple-app-store-transparent-236e0741.svg",
+              "RouterLink": "/ar/MobileApp"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "متجر جوجل",
+              "Icon": "assets/images/google-play-store-transparent-4a34ba3a.svg",
+              "RouterLink": "/ar/MobileApp"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "متجر هواوي",
+              "Icon": "assets/images/huaweiApp.svg",
+              "RouterLink": "/ar/MobileApp"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 14,
+          "Title": "الرقم المجاني",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "8001243344",
+              "Icon": "",
+              "RouterLink": "tel:8001243344"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 10,
+          "Title": "الدعم والمساندة",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "اتصل بنا",
+              "Icon": "",
+              "RouterLink": "/ContactUs"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الأسئلة الشائعة",
+              "Icon": "",
+              "RouterLink": "/ContactUs/Faq/BySubject"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "المشاركة الإلكترونية",
+              "Icon": "",
+              "RouterLink": "/CommunityParticipation"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "بلاغ عن فساد",
+              "Icon": "",
+              "RouterLink": "/Pages/ReportCorruption"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "خريطة الموقع",
+              "Icon": "",
+              "RouterLink": "/SiteMap"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "التوظيف",
+              "Icon": "",
+              "RouterLink": "https://career.gosi.gov.sa/ar"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 9,
+          "Title": "عن المؤسسة",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "عن المؤسسة",
+              "Icon": "",
+              "RouterLink": "/AboutGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الأخبار و الفعاليات",
+              "Icon": "",
+              "RouterLink": "/MediaCenter"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "اتفاقية الاستخدام",
+              "Icon": "",
+              "RouterLink": "/Pages/TermsofUse"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الخصوصية وسرية البيانات",
+              "Icon": "",
+              "RouterLink": "/Pages/PrivacyPolicy"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "سياسة حرية المعلومات ",
+              "Icon": "",
+              "RouterLink": "/Pages/Info-Rights.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "سياسة أمن المنصة",
+              "Icon": "",
+              "RouterLink": "/Pages/PlatformSecurityPolicy"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "اتفاقية مستوى الخدمة",
+              "Icon": "",
+              "RouterLink": "/Pages/SLA.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "الشروط والأحكام",
+              "Icon": "",
+              "RouterLink": "/Pages/TermsandConditions"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "النشرة البريدية ",
+              "Icon": "",
+              "RouterLink": "https://www.gosi.gov.sa/ar/AboutGOSI/Subscription"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "سياسة التعامل مع الشكاوى ورضا العملاء",
+              "Icon": "",
+              "RouterLink": "https://www.gosi.gov.sa/ar/Pages/CHACSPolicy"
+            }
+          ]
+        }
+      ],
+      "LastPublishedDate": "2025/07/21 04:20:19 PM",
+      "SeoMetaDescription": null,
+      "SeoKeywords": null,
+      "ReturnCode": 0,
+      "Message": "",
+      "ControlValidations": []
+    },
+    "prodEnFooter": {
+      "FooterMenuList": [
+        {
+          "Created": null,
+          "ID": 3,
+          "Title": "Assistance And Support ",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Contact Us",
+              "Icon": "",
+              "RouterLink": "/ContactUs"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "FAQ",
+              "Icon": "",
+              "RouterLink": "/ContactUs/Faq/ByUser"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Electronic Participation",
+              "Icon": "",
+              "RouterLink": "/CommunityParticipation"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Corruption report",
+              "Icon": "",
+              "RouterLink": "/Pages/ReportCorruption.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Site Map",
+              "Icon": "",
+              "RouterLink": "/SiteMap"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Careers",
+              "Icon": "",
+              "RouterLink": "https://career.gosi.gov.sa/en"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 1,
+          "Title": "Important Links",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Ministry of Finance",
+              "Icon": "",
+              "RouterLink": "https://www.mof.gov.sa/Pages/default.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Ministry of Human Resources and Social Development",
+              "Icon": "",
+              "RouterLink": "https://hrsd.gov.sa/en/node"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "National Portal",
+              "Icon": "",
+              "RouterLink": "https://my.gov.sa/en"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "International Social Security Association (ISSA)",
+              "Icon": "",
+              "RouterLink": "https://ww1.issa.int/"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "E-Participation Platform",
+              "Icon": "",
+              "RouterLink": "https://eparticipation.my.gov.sa/en/"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "National Strategy For Data And AI",
+              "Icon": "",
+              "RouterLink": "https://ai.sa/index.html"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "OpenData",
+              "Icon": "",
+              "RouterLink": "https://od.data.gov.sa/en"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 4,
+          "Title": "Social Media Channels",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Facebook",
+              "Icon": "icon-facebook1",
+              "RouterLink": "https://www.facebook.com/SaudiGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Twitter",
+              "Icon": "icon-twitter2",
+              "RouterLink": "https://x.com/SaudiGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Linked In",
+              "Icon": "icon-linkedin1",
+              "RouterLink": "https://www.linkedin.com/company/general-organization-for-social-insurance"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Youtube",
+              "Icon": "icon-youtube1",
+              "RouterLink": "https://www.youtube.com/user/SaudiGOSI"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 5,
+          "Title": "Mobile Apps",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Apple Store",
+              "Icon": "assets/images/apple-app-store-transparent-236e0741.svg",
+              "RouterLink": "/en/MobileApp"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Google Play",
+              "Icon": "assets/images/google-play-store-transparent-4a34ba3a.svg",
+              "RouterLink": "/en/MobileApp"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Huawei App Galary",
+              "Icon": "assets/images/huaweiApp.svg",
+              "RouterLink": "/MobileApp"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 7,
+          "Title": "Toll Free",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "8001243344",
+              "Icon": "",
+              "RouterLink": "tel:8001243344"
+            }
+          ]
+        },
+        {
+          "Created": null,
+          "ID": 2,
+          "Title": "About GOSI",
+          "MenuList": [
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "About Us",
+              "Icon": "",
+              "RouterLink": "/AboutGOSI"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "News And Events",
+              "Icon": "",
+              "RouterLink": "/MediaCenter"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Terms Of Use",
+              "Icon": "",
+              "RouterLink": "/Pages/TermsofUse"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Privacy and Data Confidentiality",
+              "Icon": "",
+              "RouterLink": "/Pages/PrivacyPolicy"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Freedom of information policy",
+              "Icon": "",
+              "RouterLink": "/Pages/Info-Rights.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Service level agreement",
+              "Icon": "",
+              "RouterLink": "/Pages/SLA.aspx"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Terms and Conditions",
+              "Icon": "",
+              "RouterLink": "/Pages/TermsandConditions"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Platform Security Policy",
+              "Icon": "",
+              "RouterLink": "/Pages/PlatformSecurityPolicy"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Newsletter",
+              "Icon": "",
+              "RouterLink": "https://www.gosi.gov.sa/en/AboutGOSI/Subscription"
+            },
+            {
+              "Created": null,
+              "ID": 0,
+              "Title": "Clint’s Complaints Handling Policy ",
+              "Icon": "",
+              "RouterLink": "/Pages/CHACSPolicy"
+            }
+          ]
+        }
+      ],
+      "LastPublishedDate": "2025/10/01 08:42:17 AM",
+      "SeoMetaDescription": null,
+      "SeoKeywords": null,
+      "ReturnCode": 0,
+      "Message": "",
+      "ControlValidations": []
+    }
+}

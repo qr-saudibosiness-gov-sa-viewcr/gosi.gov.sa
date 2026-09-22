@@ -1,0 +1,13 @@
+{
+  "liveChatUrl": "https://www.gosi.gov.sa",
+  "liveChatPort": "1002",
+  "templateName": "chat-demo-gosionline",
+  "webChatId": "gosi-web-chat",
+  "chatbotUrl": "https://chatbot.masdr.sa/webapi/chatbot/engine/api/v1/gosi/chatbot/chat",
+  "complaintApi": "http://apiint.gosi.gov.sa/v1/lov?category=COMPLAINTS&domainName=ComplaintGPT",
+  "generateTokenApi": "https://api.gosi.gov.sa/callbotapi/complaintToken",
+  "baseUrl": "https://www.gosi.gov.sa",
+  "environment": "production",
+  "enableDebugLogs": false,
+  "assetsBaseUrl": "https://gosi-chat-widget.masdr.org"
+}

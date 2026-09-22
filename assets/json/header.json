@@ -1,0 +1,4678 @@
+{
+    "uatArHeader": {
+    "WebHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "الرئيسية",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "عن المؤسسة",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "/AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "تاريخ المؤسسة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "مجلس الإدارة",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "الهيكل التنظيمي",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "الإدارة التنفيذية",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 34,
+            "Title": "المشاركة الإلكترونية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "اتصل بنا",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "السياسات والاستراتيجات",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 61,
+                "Title": "استراتيجية المؤسسة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 44,
+                "RouterLink": "/AboutGOSI/Pages/strategy.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 62,
+                "Title": "سياسات المؤسسة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 44,
+                "RouterLink": "/AboutGOSI/Pages/Policies.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 63,
+                "Title": "الأنظمة واللوائح",
+                "MobileDisplayOrder": 3,
+                "ParentID": 44,
+                "RouterLink": "/SystemsAndRegulations",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "الميزانية والمصروفات",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "المشتريات وبوابة الموردين",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 57,
+            "Title": "شركاء المؤسسة",
+            "MobileDisplayOrder": 15,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/partners",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 58,
+                "Title": "شركاء القطاع الحكومي",
+                "MobileDisplayOrder": 1,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Governmentsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "شركاء القطاع الخاص",
+                "MobileDisplayOrder": 2,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Privatesector.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 60,
+                "Title": "القطاع غير الربحي",
+                "MobileDisplayOrder": 3,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Nonprofitsector.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 15
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "التنمية المستدامة",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/SustainableDevelopment.aspx/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "رحلة  العميل",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "الأنظمة واللوائح",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "نظام التأمينات الاجتماعية 1421ه",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "نظام التأمينات الاجتماعية 1445ه",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/newSystem/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "نظام التقاعد المدني",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "نظام التقاعد العسكري",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "نظام تبادل المنافع",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "نظام التأمين ضد التعطل عن العمل \"ساند\"",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "النظام الموحد لمد الحماية التأمينية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "المستندات المطلوبة",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "المصطلحات",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "كتيبات الأنظمة",
+            "MobileDisplayOrder": 10,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          },
+          {
+            "Created": null,
+            "ID": 49,
+            "Title": "حقوق ومسؤوليات العملاء",
+            "MobileDisplayOrder": 11,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/CustomerRightsAndResponsibilities",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 11
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "الخدمات",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "خدمات الأفراد",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "خدمات الأعمال",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "التحقق السريع",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "المركز الإعلامي",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "الأخبار",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "الفعاليات والأنشطة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "المبادرات والشراكات",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "حملاتنا الإعلامية",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "الهوية البصرية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "إحصاءات وبيانات",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "البيانات المفتوحة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 56,
+                "Title": "tttt",
+                "MobileDisplayOrder": 1,
+                "ParentID": 24,
+                "RouterLink": "/fff",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              }
+            ],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "التقرير الإحصائي السنوي",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "النشرات الإحصائية",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 50,
+        "Title": "تقدير",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 50,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 52,
+            "Title": "المسارات",
+            "MobileDisplayOrder": 2,
+            "ParentID": 50,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "MobileHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "الرئيسية",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "عن المؤسسة",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "/AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "تاريخ المؤسسة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "مجلس الإدارة",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "الهيكل التنظيمي",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "الإدارة التنفيذية",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 34,
+            "Title": "المشاركة الإلكترونية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "اتصل بنا",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "السياسات والاستراتيجات",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 61,
+                "Title": "استراتيجية المؤسسة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 44,
+                "RouterLink": "/AboutGOSI/Pages/strategy.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 62,
+                "Title": "سياسات المؤسسة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 44,
+                "RouterLink": "/AboutGOSI/Pages/Policies.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 63,
+                "Title": "الأنظمة واللوائح",
+                "MobileDisplayOrder": 3,
+                "ParentID": 44,
+                "RouterLink": "/SystemsAndRegulations",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "الميزانية والمصروفات",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "المشتريات وبوابة الموردين",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 57,
+            "Title": "شركاء المؤسسة",
+            "MobileDisplayOrder": 15,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/partners",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 58,
+                "Title": "شركاء القطاع الحكومي",
+                "MobileDisplayOrder": 1,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Governmentsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "شركاء القطاع الخاص",
+                "MobileDisplayOrder": 2,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Privatesector.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 60,
+                "Title": "القطاع غير الربحي",
+                "MobileDisplayOrder": 3,
+                "ParentID": 57,
+                "RouterLink": "/AboutGOSI/Pages/Nonprofitsector.aspx",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 15
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "التنمية المستدامة",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "AboutGOSI/Pages/SustainableDevelopment.aspx/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "رحلة  العميل",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "الأنظمة واللوائح",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "نظام التأمينات الاجتماعية 1421ه",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "نظام التأمينات الاجتماعية 1445ه",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/newSystem/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "نظام التقاعد المدني",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "نظام التقاعد العسكري",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "نظام تبادل المنافع",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "نظام التأمين ضد التعطل عن العمل \"ساند\"",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "النظام الموحد لمد الحماية التأمينية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "المستندات المطلوبة",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "المصطلحات",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "كتيبات الأنظمة",
+            "MobileDisplayOrder": 10,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "الخدمات",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "خدمات الأفراد",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "خدمات الأعمال",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "التحقق السريع",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "المركز الإعلامي",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "الأخبار",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "الفعاليات والأنشطة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "المبادرات والشراكات",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "الهوية البصرية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "إحصاءات وبيانات",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "البيانات المفتوحة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 56,
+                "Title": "tttt",
+                "MobileDisplayOrder": 1,
+                "ParentID": 24,
+                "RouterLink": "/fff",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              }
+            ],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "التقرير الإحصائي السنوي",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "النشرات الإحصائية",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 50,
+        "Title": "تقدير",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 50,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 52,
+            "Title": "المسارات",
+            "MobileDisplayOrder": 2,
+            "ParentID": 50,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "LastPublishedDate": "2024/10/15 05:03:35 AM",
+    "SeoMetaDescription": "test",
+    "SeoKeywords": "test2",
+    "ReturnCode": 0,
+    "Message": "",
+    "ControlValidations": []
+  },
+    "uatEnHeader": {
+    "WebHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "Home",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "About Gosi",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "Overview",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "GOSI History",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "Board Of Directors",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "Organizational Chart",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "Executive Managment",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "Recruitment",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "ELECTRONIC PARTICIPANT",
+            "MobileDisplayOrder": 7,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 44,
+                "Title": "Feedback",
+                "MobileDisplayOrder": 1,
+                "ParentID": 43,
+                "RouterLink": "/feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 45,
+                    "Title": "Service Performance",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 44,
+                    "RouterLink": "/ServicePerformance",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 48,
+                    "Title": "Portal performance statistics",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 50,
+                    "Title": "BeneficiaryVoiceReports",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 51,
+                    "Title": "CustomerSatisfactionIndicators",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 52,
+                    "Title": "Suggestion & complaints",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 44,
+                    "RouterLink": "/ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 46,
+                "Title": "OpenData",
+                "MobileDisplayOrder": 2,
+                "ParentID": 43,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 47,
+                    "Title": "Terms & conditions",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 49,
+                    "Title": "Open data library",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 53,
+                    "Title": "Open data use case",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 54,
+                    "Title": "Request additional open data",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              }
+            ],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "User Journey",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "Laws And Regulations",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "Social Insurance Law",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "Civil Law",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "Military Law",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "Benefit Exchange Law",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "Saned Law",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "Insurance Protection Law",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "Required Documents",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "Terminologies",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "Books",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "Services",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "Individuals Services",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "Business Services",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "Quick Verification",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "Media Center",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "News",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "Events",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "Initiatives And Partnerships",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "Media Campaigns",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "Gosi Identity",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "Statistics And Data",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "Opened Data",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "Annual Report",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "Statistical Reports",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 40,
+        "Title": "Taqdeer",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "About Us",
+            "MobileDisplayOrder": 1,
+            "ParentID": 40,
+            "RouterLink": "Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 42,
+            "Title": "Paths",
+            "MobileDisplayOrder": 2,
+            "ParentID": 40,
+            "RouterLink": "Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "MobileHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "Home",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "About Gosi",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "Overview",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "GOSI History",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "Board Of Directors",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "Organizational Chart",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "Recruitment",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "Executive Managment",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "ELECTRONIC PARTICIPANT",
+            "MobileDisplayOrder": 7,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 44,
+                "Title": "Feedback",
+                "MobileDisplayOrder": 1,
+                "ParentID": 43,
+                "RouterLink": "/feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 45,
+                    "Title": "Service Performance",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 44,
+                    "RouterLink": "/ServicePerformance",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 48,
+                    "Title": "Portal performance statistics",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 50,
+                    "Title": "BeneficiaryVoiceReports",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 51,
+                    "Title": "CustomerSatisfactionIndicators",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 44,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 52,
+                    "Title": "Suggestion & complaints",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 44,
+                    "RouterLink": "/ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 46,
+                "Title": "OpenData",
+                "MobileDisplayOrder": 2,
+                "ParentID": 43,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 47,
+                    "Title": "Terms & conditions",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 49,
+                    "Title": "Open data library",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 53,
+                    "Title": "Open data use case",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 54,
+                    "Title": "Request additional open data",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 46,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              }
+            ],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "User Journey",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "Laws And Regulations",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "Social Insurance Law",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "Civil Law",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "Military Law",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "Benefit Exchange Law",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "Saned Law",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "Insurance Protection Law",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "Required Documents",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "Terminologies",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "Books",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "Services",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "Individuals Services",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "Business Services",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "Quick Verification",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "Media Center",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "News",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "Events",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "Initiatives And Partnerships",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "Gosi Identity",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "Statistics And Data",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "Opened Data",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "Annual Report",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "Statistical Reports",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 40,
+        "Title": "Taqdeer",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "About Us",
+            "MobileDisplayOrder": 1,
+            "ParentID": 40,
+            "RouterLink": "Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 42,
+            "Title": "Paths",
+            "MobileDisplayOrder": 2,
+            "ParentID": 40,
+            "RouterLink": "Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "LastPublishedDate": "2025/05/23 01:50:19 PM",
+    "SeoMetaDescription": null,
+    "SeoKeywords": null,
+    "ReturnCode": 0,
+    "Message": "",
+    "ControlValidations": []
+  },
+    "prodArHeader": {
+    "WebHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "الرئيسية",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "عن المؤسسة",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "/AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "تاريخ المؤسسة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "مجلس الإدارة",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "الهيكل التنظيمي",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "الإدارة التنفيذية",
+            "MobileDisplayOrder": 5,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "المشاركة الإلكترونية ",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 56,
+                "Title": "الاستشارات",
+                "MobileDisplayOrder": 1,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/Consultings",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 81,
+                "Title": "التغذية الراجعة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/Feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 83,
+                    "Title": "إحصاءات أداء الخدمة",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 81,
+                    "RouterLink": "/ServicePerformance.aspx",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 84,
+                    "Title": "إحصاءيات أداء الموقع",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 81,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 85,
+                    "Title": "تقارير صوت المستفيد",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 81,
+                    "RouterLink": "/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 86,
+                    "Title": "مؤشرات رضا العملاء",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 81,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 87,
+                    "Title": "الاقتراحات والشكاوى",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 81,
+                    "RouterLink": "https://www.gosi.gov.sa/ar/ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 82,
+                "Title": "البيانات المفتوحة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 40,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 88,
+                    "Title": "سياسة الاستخدام",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 89,
+                    "Title": "مكتبة البيانات المفتوحة",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 90,
+                    "Title": "حالات استخدام البيانات المفتوحة",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 91,
+                    "Title": "طلب بيانات إضافية",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 58,
+                "Title": "الأفكار الإبداعية والتطوير المشترك",
+                "MobileDisplayOrder": 3,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/CreativeIdeasAndCoDevelopment",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "وسائل التواصل الاجتماعي",
+                "MobileDisplayOrder": 4,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/SocialMedia",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 4
+              }
+            ],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "التوظيف",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 42,
+            "Title": "اتصل بنا",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "البرامج والمبادرات",
+            "MobileDisplayOrder": 10,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/initiatives.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "الأخبار و الفعاليات",
+            "MobileDisplayOrder": 11,
+            "ParentID": 6,
+            "RouterLink": "/MediaCenter/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 11
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "السياسات والاستراتيجيات",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 61,
+                "Title": "استراتيجية المؤسسة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 45,
+                "RouterLink": "/AboutGOSI/Pages/strategy",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 62,
+                "Title": "سياسات المؤسسة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 45,
+                "RouterLink": "/AboutGOSI/Pages/Policies",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 63,
+                "Title": "الأنظمة ولوائح المؤسسة",
+                "MobileDisplayOrder": 3,
+                "ParentID": 45,
+                "RouterLink": "/SystemsAndRegulations",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "الميزانية والمصروفات",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 47,
+            "Title": "المشتريات وبوابة الموردين",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "شركاء المؤسسة",
+            "MobileDisplayOrder": 15,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/partners.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 69,
+                "Title": "شركاء القطاع الحكومي",
+                "MobileDisplayOrder": 1,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Governmentsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 70,
+                "Title": "شركاء القطاع الخاص",
+                "MobileDisplayOrder": 2,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Privatesector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 71,
+                "Title": "شركاء القطاع غير الربحي",
+                "MobileDisplayOrder": 3,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Nonprofitsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 15
+          },
+          {
+            "Created": null,
+            "ID": 49,
+            "Title": "التنمية المستدامة",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/SustainableDevelopment.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 50,
+            "Title": "رحلة  العميل",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "الأنظمة واللوائح",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "نظام التأمينات الاجتماعية 1421 ه",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "نظام التأمينات الاجتماعية 1445ه",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/newSystem/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "نظام التقاعد المدني",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "نظام التقاعد العسكري",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "نظام تبادل المنافع",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "نظام التأمين ضد التعطل عن العمل \"ساند\"",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "النظام الموحد لمد الحماية التأمينية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "المستندات المطلوبة",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "المصطلحات",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "كتيبات الأنظمة",
+            "MobileDisplayOrder": 10,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "الخدمات",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "خدمات الأفراد",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "خدمات الأعمال",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "التحقق السريع",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "المركز الإعلامي",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "الأخبار",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "الفعاليات والأنشطة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "المبادرات والشراكات",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 31,
+            "Title": "نشرات إعلامية",
+            "MobileDisplayOrder": 5,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/MediaReleases",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "حملاتنا الإعلامية",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "الهوية البصرية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 80,
+            "Title": "المؤتمرات والمعارض ",
+            "MobileDisplayOrder": 8,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Conferences",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "إحصاءات وبيانات",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "البيانات المفتوحة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "التقرير الإحصائي السنوي",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "النشرات الإحصائية",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 52,
+        "Title": "تقدير",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "/Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 53,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "المسارات",
+            "MobileDisplayOrder": 2,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 75,
+                "Title": "مسار مزايا",
+                "MobileDisplayOrder": 1,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/offers",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 76,
+                "Title": "مسار التمويل",
+                "MobileDisplayOrder": 2,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/funding",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 77,
+                "Title": "مسار خبرة",
+                "MobileDisplayOrder": 3,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/experience",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              },
+              {
+                "Created": null,
+                "ID": 78,
+                "Title": "مسار المسؤولية الإجتماعية ",
+                "MobileDisplayOrder": 4,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/social-responsibilities",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 4
+              },
+              {
+                "Created": null,
+                "ID": 79,
+                "Title": "مسار فعاليات",
+                "MobileDisplayOrder": 5,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/event",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 5
+              }
+            ],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "MobileHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "الرئيسية",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "عن المؤسسة",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "/AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "تاريخ المؤسسة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "مجلس الإدارة",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "الهيكل التنظيمي",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "الإدارة التنفيذية",
+            "MobileDisplayOrder": 5,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "المشاركة الإلكترونية ",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 56,
+                "Title": "الاستشارات",
+                "MobileDisplayOrder": 1,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/Consultings",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 81,
+                "Title": "التغذية الراجعة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/Feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 83,
+                    "Title": "إحصاءات أداء الخدمة",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 81,
+                    "RouterLink": "/ServicePerformance.aspx",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 84,
+                    "Title": "إحصاءيات أداء الموقع",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 81,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 85,
+                    "Title": "تقارير صوت المستفيد",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 81,
+                    "RouterLink": "/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 86,
+                    "Title": "مؤشرات رضا العملاء",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 81,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 87,
+                    "Title": "الاقتراحات والشكاوى",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 81,
+                    "RouterLink": "ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 82,
+                "Title": "البيانات المفتوحة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 40,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 88,
+                    "Title": "سياسة الاستخدام",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 89,
+                    "Title": "مكتبة البيانات المفتوحة",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 90,
+                    "Title": "حالات استخدام البيانات المفتوحة",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 91,
+                    "Title": "طلب بيانات إضافية",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 82,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 58,
+                "Title": "الأفكار الإبداعية والتطوير المشترك",
+                "MobileDisplayOrder": 3,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/CreativeIdeasAndCoDevelopment",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "وسائل التواصل الاجتماعي",
+                "MobileDisplayOrder": 4,
+                "ParentID": 40,
+                "RouterLink": "/CommunityParticipation/SocialMedia",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 4
+              }
+            ],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "التوظيف",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 42,
+            "Title": "اتصل بنا",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "البرامج والمبادرات",
+            "MobileDisplayOrder": 10,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/initiatives.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "الأخبار و الفعاليات",
+            "MobileDisplayOrder": 11,
+            "ParentID": 6,
+            "RouterLink": "/MediaCenter/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 11
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "السياسات والاستراتيجيات",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 61,
+                "Title": "استراتيجية المؤسسة",
+                "MobileDisplayOrder": 1,
+                "ParentID": 45,
+                "RouterLink": "/AboutGOSI/Pages/strategy",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 62,
+                "Title": "سياسات المؤسسة",
+                "MobileDisplayOrder": 2,
+                "ParentID": 45,
+                "RouterLink": "/AboutGOSI/Pages/Policies",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 63,
+                "Title": "الأنظمة ولوائح المؤسسة",
+                "MobileDisplayOrder": 3,
+                "ParentID": 45,
+                "RouterLink": "/SystemsAndRegulations",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "الميزانية والمصروفات",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 47,
+            "Title": "المشتريات وبوابة الموردين",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "شركاء المؤسسة",
+            "MobileDisplayOrder": 15,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/partners.aspx",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 69,
+                "Title": "شركاء القطاع الحكومي",
+                "MobileDisplayOrder": 1,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Governmentsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 70,
+                "Title": "شركاء القطاع الخاص",
+                "MobileDisplayOrder": 2,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Privatesector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 71,
+                "Title": "شركاء القطاع غير الربحي",
+                "MobileDisplayOrder": 3,
+                "ParentID": 48,
+                "RouterLink": "/AboutGOSI/Pages/Nonprofitsector",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              }
+            ],
+            "WebDisplayOrder": 15
+          },
+          {
+            "Created": null,
+            "ID": 49,
+            "Title": "التنمية المستدامة",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/SustainableDevelopment.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 50,
+            "Title": "رحلة  العميل",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "الأنظمة واللوائح",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "نظام التأمينات الاجتماعية 1421 ه",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "نظام التأمينات الاجتماعية 1445ه",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/newSystem/",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "نظام التقاعد المدني",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "نظام التقاعد العسكري",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "نظام تبادل المنافع",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "نظام التأمين ضد التعطل عن العمل \"ساند\"",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "النظام الموحد لمد الحماية التأمينية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "المستندات المطلوبة",
+            "MobileDisplayOrder": 8,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 22,
+            "Title": "المصطلحات",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Terminologies",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "كتيبات الأنظمة",
+            "MobileDisplayOrder": 10,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "الخدمات",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "خدمات الأفراد",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "خدمات الأعمال",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "التحقق السريع",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "المركز الإعلامي",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "الأخبار",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "الفعاليات والأنشطة",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "المبادرات والشراكات",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 31,
+            "Title": "نشرات إعلامية",
+            "MobileDisplayOrder": 5,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/MediaReleases",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "حملاتنا الإعلامية",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "الهوية البصرية",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 80,
+            "Title": "المؤتمرات والمعارض ",
+            "MobileDisplayOrder": 8,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Conferences",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "إحصاءات وبيانات",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "البيانات المفتوحة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "التقرير الإحصائي السنوي",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "النشرات الإحصائية",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 52,
+        "Title": "تقدير",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "/Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 53,
+            "Title": "نبذة عامة",
+            "MobileDisplayOrder": 1,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "المسارات",
+            "MobileDisplayOrder": 2,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 75,
+                "Title": "مسار مزايا",
+                "MobileDisplayOrder": 1,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/offers",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 76,
+                "Title": "مسار التمويل",
+                "MobileDisplayOrder": 2,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/funding",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 2
+              },
+              {
+                "Created": null,
+                "ID": 77,
+                "Title": "مسار خبرة",
+                "MobileDisplayOrder": 3,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/experience",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 3
+              },
+              {
+                "Created": null,
+                "ID": 78,
+                "Title": "مسار المسؤولية الإجتماعية ",
+                "MobileDisplayOrder": 4,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/social-responsibilities",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 4
+              },
+              {
+                "Created": null,
+                "ID": 79,
+                "Title": "مسار فعاليات",
+                "MobileDisplayOrder": 5,
+                "ParentID": 54,
+                "RouterLink": "/Taqdeer/Paths/event",
+                "SubHeaderMenu": [],
+                "WebDisplayOrder": 5
+              }
+            ],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "LastPublishedDate": "2025/07/21 04:20:19 PM",
+    "SeoMetaDescription": null,
+    "SeoKeywords": null,
+    "ReturnCode": 0,
+    "Message": "",
+    "ControlValidations": []
+  },
+    "prodEnHeader": {
+    "WebHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "Home",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "About Gosi",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "/AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "Overview",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "GOSI History",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "Board Of Directors",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "Organizational Chart",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "Executive Management",
+            "MobileDisplayOrder": 5,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 47,
+            "Title": "Electronic participation",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 57,
+                "Title": "FeedBack",
+                "MobileDisplayOrder": 1,
+                "ParentID": 47,
+                "RouterLink": "/CommunityParticipation/Feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 58,
+                    "Title": "Service performance statistics",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 57,
+                    "RouterLink": "/ServicePerformance",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 60,
+                    "Title": "Portal performance statistics",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 61,
+                    "Title": "BeneficiaryVoiceReports",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 62,
+                    "Title": "CustomerSatisfactionIndicators",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 63,
+                    "Title": "Suggestion & complaints",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 57,
+                    "RouterLink": "/ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "Open data",
+                "MobileDisplayOrder": 2,
+                "ParentID": 47,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 64,
+                    "Title": "Terms & conditions",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 65,
+                    "Title": "Open data library",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 66,
+                    "Title": "Open data use case",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 67,
+                    "Title": "Request additional open data",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              }
+            ],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "Recruitment",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "Contact Us",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "Programs and initiatives ",
+            "MobileDisplayOrder": 10,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/initiatives.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "News and Events ",
+            "MobileDisplayOrder": 11,
+            "ParentID": 6,
+            "RouterLink": "/MediaCenter",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 11
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "Policies and Strategies",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "Budget and expenses",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "Procurement & Supplier Portal",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 49,
+            "Title": "Sustainable Development",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/SustainableDevelopment.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "User Journey",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 50,
+            "Title": "Partners",
+            "MobileDisplayOrder": 17,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Partners",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 17
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "Laws And Regulations",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "Social Insurance Law",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "Civil Law",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "Military Law",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "Benefit Exchange Law",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "Saned Law",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "Unified Law for Extension of Insurance Coverage",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "Required Documents",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "Books",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "Services",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "Individuals Services",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "Business Services",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "Quick Verification",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "Media Center",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "News",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "Events",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "Initiatives And Partnerships",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 31,
+            "Title": "Media Releases",
+            "MobileDisplayOrder": 5,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/MediaReleases",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "Media Campaigns",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "Gosi Identity",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 56,
+            "Title": "Exhibitions and conferences",
+            "MobileDisplayOrder": 8,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Conferences",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "Statistics And Data",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "Opened Data",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "Annual Report",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "Statistical Reports",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 52,
+        "Title": "Taqdeer",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "/Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 53,
+            "Title": "About Us",
+            "MobileDisplayOrder": 1,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "Paths",
+            "MobileDisplayOrder": 2,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "MobileHeaderMenuList": [
+      {
+        "Created": null,
+        "ID": 5,
+        "Title": "Home",
+        "MobileDisplayOrder": 1,
+        "ParentID": 0,
+        "RouterLink": "/",
+        "SubHeaderMenu": [],
+        "WebDisplayOrder": 1
+      },
+      {
+        "Created": null,
+        "ID": 6,
+        "Title": "About Gosi",
+        "MobileDisplayOrder": 2,
+        "ParentID": 0,
+        "RouterLink": "AboutGOSI",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 11,
+            "Title": "Overview",
+            "MobileDisplayOrder": 1,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Overview",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 35,
+            "Title": "GOSI History",
+            "MobileDisplayOrder": 2,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/GosiHistory",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 12,
+            "Title": "Board Of Directors",
+            "MobileDisplayOrder": 3,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/BoardOfDirectors",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 13,
+            "Title": "Organizational Chart",
+            "MobileDisplayOrder": 4,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/OrganizationalChart",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 39,
+            "Title": "Executive Management",
+            "MobileDisplayOrder": 5,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/ExecutiveManagement",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 47,
+            "Title": "Electronic participation",
+            "MobileDisplayOrder": 6,
+            "ParentID": 6,
+            "RouterLink": "/CommunityParticipation",
+            "SubHeaderMenu": [
+              {
+                "Created": null,
+                "ID": 57,
+                "Title": "FeedBack",
+                "MobileDisplayOrder": 1,
+                "ParentID": 47,
+                "RouterLink": "/CommunityParticipation/Feedback",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 58,
+                    "Title": "Service performance statistics",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 57,
+                    "RouterLink": "/ServicePerformance",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 60,
+                    "Title": "Portal performance statistics",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/PortalPerformanceStatistics",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 61,
+                    "Title": "BeneficiaryVoiceReports",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/BeneficiaryVoiceReports",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 62,
+                    "Title": "CustomerSatisfactionIndicators",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 57,
+                    "RouterLink": "/CommunityParticipation/Feedback/CustomerSatisfactionIndicators",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  },
+                  {
+                    "Created": null,
+                    "ID": 63,
+                    "Title": "Suggestion & complaints",
+                    "MobileDisplayOrder": 5,
+                    "ParentID": 57,
+                    "RouterLink": "/ContactUs",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 5
+                  }
+                ],
+                "WebDisplayOrder": 1
+              },
+              {
+                "Created": null,
+                "ID": 59,
+                "Title": "Open data",
+                "MobileDisplayOrder": 2,
+                "ParentID": 47,
+                "RouterLink": "/StatisticsAndData/OpenedData",
+                "SubHeaderMenu": [
+                  {
+                    "Created": null,
+                    "ID": 64,
+                    "Title": "Terms & conditions",
+                    "MobileDisplayOrder": 1,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/policy",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 1
+                  },
+                  {
+                    "Created": null,
+                    "ID": 65,
+                    "Title": "Open data library",
+                    "MobileDisplayOrder": 2,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/download",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 2
+                  },
+                  {
+                    "Created": null,
+                    "ID": 66,
+                    "Title": "Open data use case",
+                    "MobileDisplayOrder": 3,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/default",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 3
+                  },
+                  {
+                    "Created": null,
+                    "ID": 67,
+                    "Title": "Request additional open data",
+                    "MobileDisplayOrder": 4,
+                    "ParentID": 59,
+                    "RouterLink": "/StatisticsAndData/OpenedData/RequestAdditionalData",
+                    "SubHeaderMenu": [],
+                    "WebDisplayOrder": 4
+                  }
+                ],
+                "WebDisplayOrder": 2
+              }
+            ],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 40,
+            "Title": "Recruitment",
+            "MobileDisplayOrder": 8,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Careers",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          },
+          {
+            "Created": null,
+            "ID": 41,
+            "Title": "Contact Us",
+            "MobileDisplayOrder": 9,
+            "ParentID": 6,
+            "RouterLink": "/ContactUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          },
+          {
+            "Created": null,
+            "ID": 48,
+            "Title": "Programs and initiatives ",
+            "MobileDisplayOrder": 10,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/initiatives.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 10
+          },
+          {
+            "Created": null,
+            "ID": 43,
+            "Title": "News and Events ",
+            "MobileDisplayOrder": 11,
+            "ParentID": 6,
+            "RouterLink": "/MediaCenter",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 11
+          },
+          {
+            "Created": null,
+            "ID": 44,
+            "Title": "Policies and Strategies",
+            "MobileDisplayOrder": 12,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Policiesandstrategies.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 12
+          },
+          {
+            "Created": null,
+            "ID": 45,
+            "Title": "Budget and expenses",
+            "MobileDisplayOrder": 13,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/budget.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 13
+          },
+          {
+            "Created": null,
+            "ID": 46,
+            "Title": "Procurement & Supplier Portal",
+            "MobileDisplayOrder": 14,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/purchases.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 14
+          },
+          {
+            "Created": null,
+            "ID": 49,
+            "Title": "Sustainable Development",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/SustainableDevelopment.aspx",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 51,
+            "Title": "User Journey",
+            "MobileDisplayOrder": 16,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/UserJourney",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 16
+          },
+          {
+            "Created": null,
+            "ID": 50,
+            "Title": "Partners",
+            "MobileDisplayOrder": 17,
+            "ParentID": 6,
+            "RouterLink": "/AboutGOSI/Pages/Partners",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 17
+          }
+        ],
+        "WebDisplayOrder": 2
+      },
+      {
+        "Created": null,
+        "ID": 10,
+        "Title": "Laws And Regulations",
+        "MobileDisplayOrder": 3,
+        "ParentID": 0,
+        "RouterLink": "/SystemsAndRegulations",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 18,
+            "Title": "Social Insurance Law",
+            "MobileDisplayOrder": 1,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/SocialInsurance",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 15,
+            "Title": "Civil Law",
+            "MobileDisplayOrder": 2,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Civil",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 16,
+            "Title": "Military Law",
+            "MobileDisplayOrder": 3,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Military",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 17,
+            "Title": "Benefit Exchange Law",
+            "MobileDisplayOrder": 4,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/BenefitExchange",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 4
+          },
+          {
+            "Created": null,
+            "ID": 19,
+            "Title": "Saned Law",
+            "MobileDisplayOrder": 5,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Saned",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 20,
+            "Title": "Unified Law for Extension of Insurance Coverage",
+            "MobileDisplayOrder": 6,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/InsuranceProtection",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 21,
+            "Title": "Required Documents",
+            "MobileDisplayOrder": 7,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/RequiredDocuments",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 23,
+            "Title": "Books",
+            "MobileDisplayOrder": 9,
+            "ParentID": 10,
+            "RouterLink": "/SystemsAndRegulations/Books",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 9
+          }
+        ],
+        "WebDisplayOrder": 3
+      },
+      {
+        "Created": null,
+        "ID": 8,
+        "Title": "Services",
+        "MobileDisplayOrder": 4,
+        "ParentID": 0,
+        "RouterLink": "/Services",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 36,
+            "Title": "Individuals Services",
+            "MobileDisplayOrder": 1,
+            "ParentID": 8,
+            "RouterLink": "/IndividualsServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 37,
+            "Title": "Business Services",
+            "MobileDisplayOrder": 2,
+            "ParentID": 8,
+            "RouterLink": "/BusinessServices",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 38,
+            "Title": "Quick Verification",
+            "MobileDisplayOrder": 3,
+            "ParentID": 8,
+            "RouterLink": "/Services/QuickVerification",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 4
+      },
+      {
+        "Created": null,
+        "ID": 7,
+        "Title": "Media Center",
+        "MobileDisplayOrder": 5,
+        "ParentID": 0,
+        "RouterLink": "/MediaCenter",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 27,
+            "Title": "News",
+            "MobileDisplayOrder": 1,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/News",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 28,
+            "Title": "Events",
+            "MobileDisplayOrder": 2,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Events",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 29,
+            "Title": "Initiatives And Partnerships",
+            "MobileDisplayOrder": 3,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/InitiativesAndPartnerships",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          },
+          {
+            "Created": null,
+            "ID": 31,
+            "Title": "Media Releases",
+            "MobileDisplayOrder": 5,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/MediaReleases",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 5
+          },
+          {
+            "Created": null,
+            "ID": 55,
+            "Title": "Media Campaigns",
+            "MobileDisplayOrder": 6,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Campaigns",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 6
+          },
+          {
+            "Created": null,
+            "ID": 33,
+            "Title": "Gosi Identity",
+            "MobileDisplayOrder": 7,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/GosiIdentity",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 7
+          },
+          {
+            "Created": null,
+            "ID": 56,
+            "Title": "Exhibitions and conferences",
+            "MobileDisplayOrder": 8,
+            "ParentID": 7,
+            "RouterLink": "/MediaCenter/Conferences",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 8
+          }
+        ],
+        "WebDisplayOrder": 5
+      },
+      {
+        "Created": null,
+        "ID": 9,
+        "Title": "Statistics And Data",
+        "MobileDisplayOrder": 6,
+        "ParentID": 0,
+        "RouterLink": "/StatisticsAndData",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 24,
+            "Title": "Opened Data",
+            "MobileDisplayOrder": 1,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/OpenedData/policy",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 25,
+            "Title": "Annual Report",
+            "MobileDisplayOrder": 2,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/AnnualReport",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          },
+          {
+            "Created": null,
+            "ID": 26,
+            "Title": "Statistical Reports",
+            "MobileDisplayOrder": 3,
+            "ParentID": 9,
+            "RouterLink": "/StatisticsAndData/StatisticLetters",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 3
+          }
+        ],
+        "WebDisplayOrder": 6
+      },
+      {
+        "Created": null,
+        "ID": 52,
+        "Title": "Taqdeer",
+        "MobileDisplayOrder": 7,
+        "ParentID": 0,
+        "RouterLink": "/Taqdeer",
+        "SubHeaderMenu": [
+          {
+            "Created": null,
+            "ID": 53,
+            "Title": "About Us",
+            "MobileDisplayOrder": 1,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/AboutUs",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 1
+          },
+          {
+            "Created": null,
+            "ID": 54,
+            "Title": "Paths",
+            "MobileDisplayOrder": 2,
+            "ParentID": 52,
+            "RouterLink": "/Taqdeer/Paths",
+            "SubHeaderMenu": [],
+            "WebDisplayOrder": 2
+          }
+        ],
+        "WebDisplayOrder": 7
+      }
+    ],
+    "LastPublishedDate": "2025/07/21 04:29:43 PM",
+    "SeoMetaDescription": null,
+    "SeoKeywords": null,
+    "ReturnCode": 0,
+    "Message": "",
+    "ControlValidations": []
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "provisions" : {
+    "21dcr1_mpc3281_alignWCAGLogoMarkup" : true,
+    "24dcr2_MPC7960_enableOnsitePostMessageVerification" : true,
+    "20dcr4_MPC2905_wcagReviewFixes" : null,
+    "25dcr4_MPC9440_enableNewFeedbackSubmitEvents" : null,
+    "customEventsBroadcast" : true,
+    "sharePropertyBetweenSubdomains" : null,
+    "21dcr2_MPC2743_enable_newLiveForm" : true,
+    "23dcr1_MPC6711_enableWCAGPrependSurvey" : null,
+    "customCssUpload" : null,
+    "20dcr4_MPC2893_enable_ScreenCaptureAsComponent" : true,
+    "dynamicModalSizeInCustomHtml" : true,
+    "21DCR5_MPC4030_EnableFixForSpaTimeOnPage" : true,
+    "25dcr1_MPC8593_disableExtraFeedbackSubmitEvent" : true,
+    "26dcr2_mpc9995_enableValidationsSummary" : null,
+    "23dcr2_MPC6869_disableNewPageEvents" : null,
+    "21dcr3_MPC3281_enable_CHTMLHandleFocusIndependently" : null,
+    "25dcr2_MPC8565_enableDynamicFeedbackButtonSize" : null,
+    "doNotSurveyOnUBTNetworkFail" : null,
+    "23dcr4_MPC7186_enableInvitationSpinnerFix" : null,
+    "mobileInvitationLayout" : true,
+    "21dcr2_MPC3571_enable_ClearEmbeddedFormOnUpdatePageView" : true,
+    "21dcr3_mpc3662_delaySurveyUntilCSSLoad" : true,
+    "mobileWebDynamicFormSizeInFormBuilder" : null,
+    "25dcr2_MPC9116_disableUserPercentileAtCreateSession" : null,
+    "25dcr4_mpc9290_WCAGScaleFix" : null,
+    "skipInvitationOptimization" : null,
+    "reusableResourcesLibrary" : true,
+    "formTemplatesWCAG" : true,
+    "formSpacing" : true,
+    "24dcr1_MPC7724_enableFormv2andInviteCSSDelay" : null,
+    "20dcr4_MPC2952_enable_exemptFormsFromQuarantine" : true,
+    "21dcr1_MPC3199_AdditionalButtonStyles" : true,
+    "24dcr4_MPC8375_enableFeedbackPayloadOptimization" : null,
+    "23dcr2_MPC6711_enableWCAGerrorMessagesPreQuestions" : null,
+    "21dcr6_MPC4296_enable_UBTIdentifierHash" : null,
+    "enableZeroRating" : null,
+    "responsiveRatingComponent" : true,
+    "23dcr3_MPC6996_enableOnsiteDomainApproval" : null,
+    "25dcr2_MPC9116_enableInviteWCAGReflow" : true,
+    "25dcr4_mpc9290_WCAGNavFix" : null,
+    "adobeAnalyticsObjectName" : null,
+    "26dcr2_MPC9581_enableSdkUuidSupport" : null,
+    "mobileWebDynamicFormSize" : true,
+    "23dcr5_MPC7505_enableDescriptiveRequiredText" : true,
+    "decibelInsight" : true,
+    "21dcr1_MPC3370_EnableGreaterSmallerThanSupport" : null,
+    "26dcr1_MPC9581_enableZoomFallback" : null,
+    "24dcr4_MPC8160_enableMultipleSubmitFix" : true,
+    "24dcr1_MPC_7567_enableDigitalFeedbackAnalytics" : true,
+    "26dcr2_mpc10136_enableAutoAdvanceWeb" : null,
+    "24dcr1_MPC7514_enableSPAOverflowFix" : true,
+    "26dcr2_mpc10177_enablePartialViewMobileWeb" : null,
+    "adobeConcatLinkTrackVars" : null,
+    "26dcr2_mpc10176_enableAutoSubmitWeb" : null,
+    "adobeIncludeLinkTrackVars" : null,
+    "20dcr32_NM11146_PreventIFrameScrollFlickering" : true,
+    "cooladataCreateSessionEvent" : null,
+    "21DCR1_MPC3199_enable_RatingLabelAlign" : true,
+    "24dcr2_MPC7960_enableViewportLogicFix" : true,
+    "23dcr2_MPC6869_enableCXJSessionEvents" : null,
+    "25dc1_MPC8353_enableDynamicAnalyticsEvents" : null,
+    "26dcr2_mpc9913_enableCustomDomainSupport" : null
+  },
+  "sbtServerDomain" : "https://ubt.digital-cloud-jed1.medallia.com",
+  "sbtEnvPrefix" : "websites_",
+  "endUserIdentifier" : { },
+  "formNodes" : [ {
+    "formId" : "2008",
+    "formUuid" : "91b4efd7-0666-3d59-c369-3765fb1149ef",
+    "isCustomHtmlEnabled" : "false",
+    "urlVersion" : "V2",
+    "formHtmlUrl" : "https://resources.digital-cloud-jed1.medallia.com/md-form/website/1.25.2/index.html",
+    "formDataUrl" : "https://resources.digital-cloud-jed1.medallia.com/websites/18137/forms/2008/formDataV2_1781609853858_###LANGUAGE_CODE###.json",
+    "formWidth" : "450",
+    "formHeight" : "600",
+    "isFixedSize" : "false",
+    "isFullWidthEmbedded" : "null",
+    "designSettings" : {
+      "formBackgroundColor" : "",
+      "thankYouPageBackgroundColor" : ""
+    },
+    "formLocalizationSettings" : {
+      "defaultLanguage" : "en",
+      "useCustomParam" : "true",
+      "customParam" : "611"
+    },
+    "formJsonRelativePath" : "websites/18137/forms/2008/formData1781609853858_###LANGUAGE_CODE###.json",
+    "formJsonV2RelativePath" : "websites/18137/forms/2008/formDataV2_1781609853858_###LANGUAGE_CODE###.json",
+    "inviteJsonRelativePath" : "websites/18137/forms/2008/invitationData1781609896541_###LANGUAGE_CODE###.json",
+    "availableLanguages" : [ "en", "ar" ],
+    "triggerAvailableLanguages" : [ "ar", "en" ],
+    "versionedResourcesUrl" : "https://resources.digital-cloud-jed1.medallia.com/liveApp/2.63.4",
+    "functionFileUrl" : "",
+    "customParams" : [ 423, 611 ],
+    "formType" : "invitation",
+    "formDisplay" : {
+      "displayType" : "lightbox",
+      "displayDirection" : "centerRight",
+      "isSelfHosted" : "",
+      "selfHostedUrl" : ""
+    },
+    "inviteData" : {
+      "inviteUrl" : "https://resources.digital-cloud-jed1.medallia.com/liveApp/2.63.4/react-invite-app-web.html",
+      "inviteHeight" : "400",
+      "inviteWidth" : "700",
+      "skipInvitation" : "true",
+      "invitationPosition" : "top",
+      "inviteDataUrl" : "https://resources.digital-cloud-jed1.medallia.com/websites/18137/forms/2008/invitationData1781609896541_###LANGUAGE_CODE###.json"
+    },
+    "onSiteData" : {
+      "kampyleInvitePerSession" : {
+        "inviteOncePerSession" : "false"
+      },
+      "abandon" : {
+        "height" : "5",
+        "zIndex" : "9999999"
+      },
+      "kampyleInvitePercentageUsers" : {
+        "prec" : "100.0"
+      },
+      "devicetypes" : [ "desktop", "mobile", "tablet" ]
+    }
+  } ],
+  "domainsConfiguration" : {
+    "allDomainsAllowed" : true
+  },
+  "integrations" : {
+    "recordedSessions" : [ {
+      "isEnabled" : [ {
+        "source" : "function",
+        "param" : "decibelInsight",
+        "paramValue" : null,
+        "predefinedArguments" : "getSessionId"
+      } ],
+      "parameters" : [ {
+        "source" : "function",
+        "param" : "decibelInsight",
+        "putIn" : "sessionId",
+        "predefinedArguments" : "getSessionId"
+      } ],
+      "integrationName" : "decibelInsight"
+    } ]
+  },
+  "usersnapEnvId" : "88c4e545-ecf1-4a57-97db-192554250885",
+  "usersnapOnpremWidgetLoaderPath" : "usersnap-widget/4.10.0/loader.js",
+  "propertyMessages" : {
+    "localizationSettings" : {
+      "defaultLanguage" : "en",
+      "useCustomParam" : false,
+      "customParam" : null
+    },
+    "messagesData" : {
+      "noJsonMessage" : {
+        "en" : {
+          "type" : "noJsonMessage",
+          "title" : "Oops",
+          "body" : "We can't collect your feedback at the moment",
+          "close" : "Close error modal"
+        }
+      }
+    }
+  },
+  "globalResourcesUrl" : "https://resources.digital-cloud-jed1.medallia.com/liveApp/resources",
+  "submitUrlPrefix" : "https://feedback.digital-cloud-jed1.medallia.com/",
+  "submitUrlSuffix" : "feedback/api/feedback/submit",
+  "analyticsSubmitEventsUrl" : "https://analytics-fe.digital-cloud-jed1.medallia.com/api/web/events",
+  "mecIntegrationId" : "gosi-medallia-com-gosi",
+  "submitUrlWithBackendUUID" : "https://feedback.digital-cloud-jed1.medallia.com/feedback/api/v2/feedback/submit",
+  "textAreaLimit" : null,
+  "digitalUnitId" : "digital_18137",
+  "customParams" : [ {
+    "id" : 423,
+    "unique_name" : "Language",
+    "type" : "Text",
+    "source" : "Cookie",
+    "source_name" : "Language",
+    "is_identifier" : false
+  }, {
+    "id" : 611,
+    "unique_name" : "CURRENTLANGUAGE",
+    "type" : "Text",
+    "source" : "Cookie",
+    "source_name" : "Language",
+    "is_identifier" : false
+  } ],
+  "digitalAnalyticsDynamicEventsList" : [ "nebula_page_view", "nebula_form_show", "nebula_invitation_show", "nebula_form_submitted", "nebula_form_submitted_auto", "nebula_invite_accepted", "nebula_after_http_post_request_on_error", "nebula_after_http_post_request_on_error_status_code", "nebula_after_http_post_request_on_timeout", "nebula_submitFeedbackFailed", "nebula_popup_blocked", "MDigital_Invalid_Origin", "nebula_feedbackUuidIsNull" ]
+}
