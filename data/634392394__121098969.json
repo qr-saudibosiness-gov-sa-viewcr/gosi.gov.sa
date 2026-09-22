@@ -3,5 +3,7 @@
   "certificateNumber": "121098969",
   "returnCode": 0,
   "message": "The certificate is active. Please wait until the e-Certificate is shown below.",
-  "pdfFile": "634392394__121098969.pdf"
+  "pdfFile": "634392394__121098969.pdf",
+  "messageEn": "The certificate is active. Please wait until the e-Certificate is shown below.",
+  "messageAr": "الشهادة سارية. يرجى الانتظار حتى يتم عرض الشهادة الإلكترونية أدناه."
 }

@@ -1,24 +1,39 @@
-نظام التحقق المحلي - خطوتان
+GOSI local unified certificate verification
 
-الخطوة الأولى: index.html
-يدخل المستخدم رقم اشتراك المنشأة + رمز الشهادة.
+Arabic route:
+/ar/VerifyECertificate/Establishment
 
-الربط موجود في data/routes.json بالشكل:
-"رقم الاشتراك|رمز الشهادة": "اسم السجل"
+English route:
+/en/VerifyECertificate/Establishment
 
-السجل الحالي:
-634392394|121098969 -> 634392394__121098969
+Each certificate = JSON + PDF in /data.
+Mapping key in data/routes.json:
+"ESTABLISHMENT_NUMBER|CERTIFICATE_CODE": "FILE_ID"
 
-ملف البيانات:
+Example files:
 data/634392394__121098969.json
-
-ملف PDF:
 data/634392394__121098969.pdf
 
-التحقق المحلي يعتبر السجل ناجحا عندما:
-- يوجد مفتاح مطابق في routes.json
-- returnCode في JSON يساوي 0
-- pdfFile موجود في JSON
+The Preview button reads routes.json, then JSON, and displays the result in the SAME URL.
+The download button downloads the PDF named by pdfFile in the JSON.
 
-زر معاينة يفتح result.html للسجل المطابق.
-زر تنزيل نسخة من الشهادة ينزل ملف PDF من data مباشرة.
+فتح النتيجة مباشرة (اختياري):
+/ar/VerifyECertificate/Establishment?stakeholderValue=634392394&certificateNumber=121098969&direct=1
+/en/VerifyECertificate/Establishment?stakeholderValue=634392394&certificateNumber=121098969&direct=1
+
+بدون direct=1 تفتح صفحة الإدخال بشكل طبيعي.
+
+SHORT DIRECT LINKS
+------------------
+ربط النتيجة المباشرة المختصرة موجود في:
+data/direct-routes.json
+
+مثال:
+"23": "634392394__121098969"
+
+يفتح النتيجة مباشرة من:
+/ar/VerifyECertificate/Establishment?23
+/en/VerifyECertificate/Establishment?23
+
+ومدعوم أيضًا:
+/ar/VerifyECertificate/Establishment?id=23
