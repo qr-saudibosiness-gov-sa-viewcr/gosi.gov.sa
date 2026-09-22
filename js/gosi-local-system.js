@@ -48,7 +48,7 @@
     if(alert){
       var spans=alert.querySelectorAll('span');
       if(spans.length){
-        spans[0].textContent=(l==='ar'?(data.messageAr||data.message||'الشهادة سارية. يرجى الانتظار حتى يتم عرض الشهادة الإلكترونية أدناه.'):(data.messageEn||data.message||'The certificate is active. Please wait until the e-Certificate is shown below.'));
+        spans[0].textContent=(data.messageEn||data.message||'The certificate is active. Please wait until the e-Certificate is shown below.');
       }
     }
     var dl=document.getElementById('localCertificateDownload');
