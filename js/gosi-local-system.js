@@ -54,7 +54,7 @@
     var dl=document.getElementById('localCertificateDownload');
     if(dl){ dl.href=U('data/'+data.pdfFile); dl.setAttribute('download',data.pdfFile); }
     var again=document.getElementById('localCertificateAgain');
-    if(again) again.onclick=function(e){ e.preventDefault(); location.reload(); };
+    if(again) again.onclick=function(e){ e.preventDefault(); history.replaceState(null,'',location.pathname); location.reload(); };
     window.scrollTo({top:0,behavior:'instant'});
   }
   async function preview(e){
