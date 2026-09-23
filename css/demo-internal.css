@@ -1,0 +1,119 @@
+/* Internal demo safety + responsive compatibility layer. */
+
+
+/* Materialize creates this helper with a desktop-sized width. It must never
+   participate in mobile overflow calculations. */
+@media (max-width: 992px) {
+  .hiddendiv.common {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body, app-root, #local-static-root, header, main, footer,
+  .container, .row, .pageContent, .verifyECertificate,
+  .verifyECertificate > .col, .verifyECertificate > .col.s12 {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  img, svg, video, canvas, iframe {
+    max-width: 100% !important;
+  }
+
+  .mob-responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .TaminatyMessage {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .TaminatyMessage p,
+  .TaminatyMessage span {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Keep Angular/Materialize's own open/close behavior. These rules only
+     constrain the drawer to the viewport. */
+  #slide-out.sidenav {
+    position: fixed !important;
+    width: min(320px, 88vw) !important;
+    max-width: 88vw !important;
+    min-width: 0 !important;
+    height: 100dvh !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  html[dir="rtl"] #slide-out.sidenav { right: 0 !important; left: auto !important; }
+  html[dir="ltr"] #slide-out.sidenav { left: 0 !important; right: auto !important; }
+
+  #slide-out.sidenav.demo-mobile-menu-open {
+    display: block !important;
+    transform: translateX(0) !important;
+  }
+
+  .demo-mobile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 997;
+    background: rgba(0,0,0,.35);
+    display: none;
+  }
+  .demo-mobile-overlay.is-open { display: block; }
+
+  #localCertificateSuccess,
+  .verifyECertificate .alert.alert-success,
+  #localCertificateDownload,
+  .verifyECertificate a[download] {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  #muneer-trigger-button,
+  gosi-chat-widget,
+  .masdr_chatBotGosi,
+  #showhide_chatbubble {
+    max-width: calc(100vw - 16px) !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 480px) {
+  
+}
+
+/* Local fallback for the accessibility trigger on mobile / the captured
+   Muneer launcher. The full third-party Muneer service is not bundled, so the
+   original GOSI font-size and grayscale controls are exposed in a compact
+   panel instead of leaving the trigger inert. */
+.portalSettings.local-mobile-accessibility {
+  display: block !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, -50%) !important;
+  width: min(20rem, calc(100vw - 2rem)) !important;
+  z-index: 100001 !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,.25) !important;
+}
+.portalSettings.local-mobile-accessibility::before { display: none !important; }
