@@ -40,15 +40,24 @@
   function setLanguageLink(){
     var a=document.getElementById('btn-change-language');
     if(a){
-      var target=lang()==='ar'?'en':'ar';
-      a.href=U(target+'/VerifyECertificate/Establishment');
+      a.href='#';
+      a.setAttribute('role','button');
+      a.setAttribute('aria-haspopup','true');
+      a.setAttribute('aria-expanded',document.querySelector('#topLinks #langsList[data-local-language-list="1"]')?'true':'false');
+      a.dataset.localAction='desktop-language';
       replaceOwnText(a, lang()==='ar'?'English':'العربية');
     }
 
-    /* The captured mobile/compact header used the generic word "Language".
-       On the Arabic page the live layout shows "English" instead. */
+    /* The live compact drawer uses the generic Language label and opens the
+       full five-language selector. It does not immediately switch to EN/AR. */
     var compact=document.querySelector('li.language .mobileHasSub');
-    if(compact) replaceOwnText(compact, lang()==='ar'?'English':'العربية');
+    if(compact){
+      replaceOwnText(compact,'Language');
+      compact.setAttribute('role','button');
+      compact.setAttribute('tabindex','0');
+      compact.setAttribute('aria-haspopup','true');
+      compact.dataset.localAction='mobile-language';
+    }
   }
 
   async function routes(){
@@ -504,6 +513,180 @@
     return el;
   }
 
+  var LANGUAGE_OPTIONS=[
+    {code:'ar',title:'عربي'},
+    {code:'en',title:'English'},
+    {code:'ur',title:'اردو'},
+    {code:'bn',title:'বাংলা'},
+    {code:'tl',title:'Filipino (Tagalog)'}
+  ];
+
+  function scopeHeaderTree(root){
+    if(!root) return root;
+    scopeHeaderNode(root);
+    Array.prototype.forEach.call(root.querySelectorAll('*'),scopeHeaderNode);
+    return root;
+  }
+
+  function closeMobileNav(){
+    if(window.GosiLocalMobileNav && typeof window.GosiLocalMobileNav.close==='function'){
+      window.GosiLocalMobileNav.close();
+      return;
+    }
+    var drawer=document.getElementById('slide-out');
+    if(drawer) drawer.classList.remove('demo-mobile-menu-open');
+    var header=document.querySelector('header');
+    if(header) header.classList.remove('headerStyle');
+  }
+
+  function removeLanguageLists(){
+    Array.prototype.forEach.call(document.querySelectorAll('#langsList[data-local-language-list="1"]'),function(x){ x.remove(); });
+    var desktop=document.getElementById('btn-change-language');
+    if(desktop) desktop.setAttribute('aria-expanded','false');
+    var mobile=document.querySelector('li.language .mobileHasSub');
+    if(mobile) mobile.setAttribute('aria-expanded','false');
+  }
+
+  function localLanguageUrl(code){
+    var rest=location.pathname.replace(/^.*?\/(?:ar|en)(?=\/|$)/i,'');
+    if(!rest || rest===location.pathname) rest='/VerifyECertificate/Establishment';
+    return new URL(code+rest+location.search+location.hash,siteRoot).href;
+  }
+
+  function chooseLanguage(code){
+    removeLanguageLists();
+    if(code==='ar' || code==='en'){
+      try{
+        document.cookie='Language='+encodeURIComponent(code)+';path=/;SameSite=Lax';
+        localStorage.setItem('locale',code);
+      }catch(_){ }
+      location.href=localLanguageUrl(code);
+      return;
+    }
+    if(code==='ur' || code==='bn' || code==='tl')
+      window.open('https://taminaty.gosi.gov.sa/#/do-login?lang='+encodeURIComponent(code),'_blank','noopener');
+  }
+
+  function buildLanguageList(mobile){
+    removeLanguageLists();
+    var trigger=mobile?document.querySelector('li.language .mobileHasSub'):document.getElementById('btn-change-language');
+    if(!trigger) return;
+
+    var ul=scopeHeaderNode(document.createElement('ul'));
+    ul.id='langsList';
+    ul.setAttribute('data-local-language-list','1');
+    if(mobile) ul.className='langsMobileList';
+
+    LANGUAGE_OPTIONS.forEach(function(item){
+      var li=scopeHeaderNode(document.createElement('li'));
+      var a=scopeHeaderNode(document.createElement('a'));
+      a.href='#';
+      a.title=item.title;
+      a.dataset.localLanguage=item.code;
+      if(item.code===lang()) a.classList.add('activeLang');
+      a.appendChild(document.createTextNode(' '+item.title+' '));
+      if(item.code===lang()) {
+        var svg=scopeHeaderNode(document.createElementNS('http://www.w3.org/2000/svg','svg'));
+        svg.setAttribute('viewBox','0 0 24 24');
+        svg.setAttribute('width','18');
+        svg.setAttribute('height','18');
+        svg.setAttribute('aria-hidden','true');
+        var path=scopeHeaderNode(document.createElementNS('http://www.w3.org/2000/svg','path'));
+        path.setAttribute('d','M20.285 6.709a1 1 0 0 0-1.414-1.418L9 15.16l-3.871-3.87a1 1 0 1 0-1.414 1.414l4.578 4.578a1 1 0 0 0 1.414 0L20.285 6.71Z');
+        path.setAttribute('fill','currentColor');
+        svg.appendChild(path);
+        a.appendChild(svg);
+      }
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    if(mobile){
+      trigger.parentNode.insertBefore(ul,trigger.nextSibling);
+      ul.style.display='block';
+    }else{
+      trigger.parentNode.appendChild(ul);
+    }
+    trigger.setAttribute('aria-expanded','true');
+  }
+
+  function toggleLanguageList(mobile){
+    var existing=document.querySelector('#langsList[data-local-language-list="1"]');
+    if(existing){ removeLanguageLists(); return; }
+    buildLanguageList(!!mobile);
+  }
+
+  function removeMobileSearchList(){
+    var old=document.querySelector('.search-box-mobile .ac-list[data-local-mobile-search-list="1"]');
+    if(old) old.remove();
+  }
+
+  function closeMobileSearch(clearValue){
+    var box=document.querySelector('.search-box-mobile');
+    if(!box) return;
+    var input=box.querySelector('input');
+    if(input && clearValue) input.value='';
+    var close=box.querySelector('[data-local-mobile-search-close="1"]');
+    if(close) close.remove();
+    removeMobileSearchList();
+  }
+
+  function mobileSearchCandidates(){
+    var seen={};
+    var out=[];
+    Array.prototype.forEach.call(document.querySelectorAll('#slide-out a[href]'),function(a){
+      var title=clean(a.textContent).replace(/\s+/g,' ');
+      var href=a.href;
+      if(!title || !href || href==='#' || seen[title+'|'+href]) return;
+      seen[title+'|'+href]=true;
+      out.push({title:title,href:href});
+    });
+    return out;
+  }
+
+  function updateMobileSearch(input){
+    var box=input && input.closest('.search-box-mobile');
+    if(!box) return;
+    var query=clean(input.value);
+    var close=box.querySelector('[data-local-mobile-search-close="1"]');
+    if(query && !close){
+      close=scopeHeaderNode(document.createElement('i'));
+      close.className='icon-s-multiply11 close-in-mobile';
+      close.setAttribute('aria-hidden','true');
+      close.setAttribute('role','button');
+      close.setAttribute('tabindex','0');
+      close.setAttribute('data-local-mobile-search-close','1');
+      box.appendChild(close);
+    }else if(!query && close){ close.remove(); }
+
+    removeMobileSearchList();
+    if(!query) return;
+    var q=query.toLocaleLowerCase();
+    var matches=mobileSearchCandidates().filter(function(x){ return x.title.toLocaleLowerCase().indexOf(q)!==-1; }).slice(0,8);
+
+    var ul=scopeHeaderNode(document.createElement('ul'));
+    ul.className='ac-list';
+    ul.setAttribute('data-local-mobile-search-list','1');
+    if(!matches.length){
+      var empty=scopeHeaderNode(document.createElement('li'));
+      empty.className='no-suggestion';
+      empty.textContent=lang()==='ar'?'لم يتم العثور على اقتراحات':'No suggestions found';
+      ul.appendChild(empty);
+      box.appendChild(ul);
+      return;
+    }
+    matches.forEach(function(item){
+      var li=scopeHeaderNode(document.createElement('li'));
+      li.className='ac-item';
+      li.textContent=item.title;
+      li.setAttribute('role','option');
+      li.setAttribute('tabindex','0');
+      li.dataset.localSearchSuggestion=item.href;
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+
   function closeHeaderSearch(){
     var box=document.querySelector('.header-search .search-box[data-local-restored-search="1"]');
     if(box) box.remove();
@@ -577,6 +760,7 @@
 
   function closeMobileLoginChoices(){
     ++loginPopupRequestId;
+    document.body.classList.remove('bodyHideScroll');
     var panel=document.getElementById('loginPopUpBtns');
     if(!panel) return;
     var box=panel.firstElementChild;
@@ -592,6 +776,8 @@
   }
 
   async function showMobileLoginChoices(){
+    closeMobileNav();
+    removeLanguageLists();
     /* The Angular bundle already contains a dedicated mobile-login template:
        #loginPopUpBtns. Use that exact DOM structure instead of reusing the
        desktop #loginModel/platform-card popup. This lets the captured site's
@@ -621,7 +807,6 @@
     box.setAttribute('aria-modal','true');
     box.setAttribute('aria-label',lang()==='ar'?'تسجيل الدخول':'Login');
 
-    var closeWrap=document.createElement('div');
     var close=document.createElement('a');
     close.href='#';
     close.setAttribute('role','button');
@@ -630,7 +815,6 @@
     closeIcon.className='icon-s-multiply11';
     close.appendChild(closeIcon);
     close.addEventListener('click',function(e){ e.preventDefault(); closeMobileLoginChoices(); });
-    closeWrap.appendChild(close);
 
     var heading=document.createElement('h4');
     heading.setAttribute('aria-label','Login title');
@@ -653,11 +837,13 @@
       list.appendChild(li);
     });
 
-    box.appendChild(closeWrap);
+    box.appendChild(close);
     box.appendChild(heading);
     box.appendChild(list);
     panel.appendChild(box);
+    scopeHeaderTree(panel);
     document.body.appendChild(panel);
+    document.body.classList.add('bodyHideScroll');
 
     if(typeof box.animate==='function'){
       box.animate(
@@ -763,7 +949,7 @@
     var mobileLogin=document.querySelector('.mobileLoginHeader');
     if(mobileLogin){ mobileLogin.setAttribute('role','button'); mobileLogin.setAttribute('tabindex','0'); mobileLogin.dataset.localAction='mobile-login'; }
     var mobileLanguage=document.querySelector('li.language .mobileHasSub');
-    if(mobileLanguage){ mobileLanguage.setAttribute('role','link'); mobileLanguage.setAttribute('tabindex','0'); mobileLanguage.dataset.localAction='language'; }
+    if(mobileLanguage){ mobileLanguage.setAttribute('role','button'); mobileLanguage.setAttribute('tabindex','0'); mobileLanguage.setAttribute('aria-haspopup','true'); mobileLanguage.dataset.localAction='mobile-language'; }
     Array.prototype.forEach.call(document.querySelectorAll('.portalSettings li span'),function(x){ x.setAttribute('role','button'); x.setAttribute('tabindex','0'); });
 
     var ameen=document.getElementById('btn-ameen');
@@ -779,7 +965,11 @@
     }
 
     var mobileSearch=document.querySelector('.search-box-mobile input');
-    if(mobileSearch && !mobileSearch.placeholder) mobileSearch.placeholder=lang()==='ar'?'بحث':'Search';
+    if(mobileSearch){
+      if(!mobileSearch.placeholder) mobileSearch.placeholder=lang()==='ar'?'بحث':'Search';
+      mobileSearch.setAttribute('aria-autocomplete','list');
+      mobileSearch.setAttribute('autocomplete','off');
+    }
 
     wireFooterActions();
     syncBackToTop();
@@ -1018,10 +1208,38 @@
       return;
     }
 
+    var langChoice=t.closest('[data-local-language]');
+    if(langChoice){
+      e.preventDefault();
+      if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
+      chooseLanguage(langChoice.dataset.localLanguage);
+      return;
+    }
+
+    var mobileSearchClose=t.closest('[data-local-mobile-search-close="1"]');
+    if(mobileSearchClose){
+      e.preventDefault();
+      if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
+      var mobileBox=mobileSearchClose.closest('.search-box-mobile');
+      closeMobileSearch(true);
+      var mobileInput=mobileBox && mobileBox.querySelector('input');
+      if(mobileInput) mobileInput.focus();
+      return;
+    }
+
+    var searchSuggestion=t.closest('[data-local-search-suggestion]');
+    if(searchSuggestion){
+      e.preventDefault();
+      closeMobileNav();
+      window.location.href=searchSuggestion.dataset.localSearchSuggestion;
+      return;
+    }
+
     var localAction=t.closest('[data-local-action]');
     if(localAction && localAction.dataset.localAction==='accessibility'){
       e.preventDefault();
       if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
+      closeMobileNav();
       toggleLocalAccessibilityPanel();
       return;
     }
@@ -1031,10 +1249,16 @@
       showMobileLoginChoices();
       return;
     }
-    if(localAction && localAction.dataset.localAction==='language'){
+    if(localAction && localAction.dataset.localAction==='mobile-language'){
       e.preventDefault();
-      var targetLang=lang()==='ar'?'en':'ar';
-      location.href=U(targetLang+'/VerifyECertificate/Establishment');
+      if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
+      toggleLanguageList(true);
+      return;
+    }
+    if(localAction && localAction.dataset.localAction==='desktop-language'){
+      e.preventDefault();
+      if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
+      toggleLanguageList(false);
       return;
     }
     if(localAction && localAction.dataset.localAction==='home'){
@@ -1089,10 +1313,11 @@
     if(langBtn){
       e.preventDefault();
       if(typeof e.stopImmediatePropagation==='function') e.stopImmediatePropagation();
-      location.href=langBtn.href;
+      toggleLanguageList(false);
       return;
     }
 
+    if(!t.closest('#langsList') && !t.closest('#btn-change-language') && !t.closest('li.language')) removeLanguageLists();
     if(!t.closest('.portalSettings') && !t.closest('#btn-panel-settings')) closePortalSettings();
   },true);
 
@@ -1184,6 +1409,11 @@
       closeLoginPopup();
       return;
     }
+    if(e.key==='Escape' && document.querySelector('#langsList[data-local-language-list="1"]')){
+      e.preventDefault();
+      removeLanguageLists();
+      return;
+    }
     if(e.key==='Escape' && document.querySelector('.header-search .search-box[data-local-restored-search="1"]')){
       e.preventDefault();
       closeHeaderSearch();
@@ -1194,21 +1424,35 @@
       closePortalSettings();
       return;
     }
+    if(e.key==='Escape' && e.target && e.target.closest && e.target.closest('.search-box-mobile')){
+      e.preventDefault();
+      removeMobileSearchList();
+      return;
+    }
     if(e.key!=='Enter') return;
     var t=e.target;
     if(!t) return;
     if(t.id==='StakeholderValue' || t.id==='CertificateNumber'){ preview(e); return; }
     if(t.id==='searchInput' || (t.closest && t.closest('.search-box-mobile'))){
       e.preventDefault();
+      if(t.closest && t.closest('.search-box-mobile')) closeMobileNav();
       runOfficialSearch(t.value);
       return;
     }
-    if(t.matches && t.matches('[data-local-href],[data-local-action],[data-local-back-top],.portalSettings li span')) t.click();
+    if(t.matches && t.matches('[data-local-href],[data-local-action],[data-local-back-top],[data-local-language],[data-local-search-suggestion],.portalSettings li span')) t.click();
   },true);
 
   document.addEventListener('input',function(e){
     var t=e.target;
     if(t && (t.id==='StakeholderValue' || t.id==='CertificateNumber')) clearError();
+    if(t && t.closest && t.closest('.search-box-mobile')) updateMobileSearch(t);
+  },true);
+
+  document.addEventListener('focusout',function(e){
+    var t=e.target;
+    if(t && t.closest && t.closest('.search-box-mobile')){
+      window.setTimeout(removeMobileSearchList,120);
+    }
   },true);
 
   async function init(){
