@@ -575,51 +575,97 @@
     document.body.appendChild(menu);
   }
 
+  function closeMobileLoginChoices(){
+    ++loginPopupRequestId;
+    var panel=document.getElementById('loginPopUpBtns');
+    if(!panel) return;
+    var box=panel.firstElementChild;
+    if(box && typeof box.animate==='function'){
+      var a=box.animate(
+        [{opacity:1,transform:'translateY(0) scale(1)'},{opacity:0,transform:'translateY(-8px) scale(.985)'}],
+        {duration:130,easing:'ease-in',fill:'forwards'}
+      );
+      a.onfinish=function(){ if(panel.parentNode) panel.parentNode.removeChild(panel); };
+    }else if(panel.parentNode){
+      panel.parentNode.removeChild(panel);
+    }
+  }
+
   async function showMobileLoginChoices(){
+    /* The Angular bundle already contains a dedicated mobile-login template:
+       #loginPopUpBtns. Use that exact DOM structure instead of reusing the
+       desktop #loginModel/platform-card popup. This lets the captured site's
+       original CSS draw the same green Individuals / blue Business buttons. */
     var requestId=++loginPopupRequestId;
-    var old=document.getElementById('loginModel');
+    var oldDesktop=document.getElementById('loginModel');
+    if(oldDesktop && oldDesktop.parentNode) oldDesktop.parentNode.removeChild(oldDesktop);
+    var old=document.getElementById('loginPopUpBtns');
     if(old && old.parentNode) old.parentNode.removeChild(old);
+
     var data;
     try{ data=await platformsList(); }catch(_){ return; }
     if(requestId!==loginPopupRequestId) return;
 
-    var model=document.createElement('div');
-    model.id='loginModel';
-    model.setAttribute('role','presentation');
-    var popup=document.createElement('div');
-    popup.className='loginPopup';
-    popup.setAttribute('role','dialog');
-    popup.setAttribute('aria-modal','true');
-    popup.setAttribute('aria-label',lang()==='ar'?'تسجيل الدخول':'Login');
-    var header=document.createElement('div');
-    header.className='loginPopupHeader';
-    header.appendChild(makeLoginCloseButton());
-    var body=document.createElement('div');
-    body.className='loginPopupBody';
-    var heading=document.createElement('h4');
-    heading.className='loginPopUpMessage';
-    heading.textContent=lang()==='ar'?'تسجيل الدخول':'Login';
-    body.appendChild(heading);
-    var list=document.createElement('ul');
-    list.className='listOfLoginItems popupLoginItems';
-
-    [1,2].forEach(function(id){
+    function platformUrl(id){
       var sub=(data.SubCategories||[]).find(function(x){ return Number(x.ID)===id; });
       var item=sub && (sub.Platforms||[])[0];
-      if(!item || !item.RouterLink) return;
+      return item && item.RouterLink ? item.RouterLink : '#';
+    }
+
+    var panel=document.createElement('div');
+    panel.id='loginPopUpBtns';
+    panel.setAttribute('role','presentation');
+
+    var box=document.createElement('div');
+    box.setAttribute('role','dialog');
+    box.setAttribute('aria-modal','true');
+    box.setAttribute('aria-label',lang()==='ar'?'تسجيل الدخول':'Login');
+
+    var closeWrap=document.createElement('div');
+    var close=document.createElement('a');
+    close.href='#';
+    close.setAttribute('role','button');
+    close.setAttribute('aria-label',lang()==='ar'?'إغلاق':'Close');
+    var closeIcon=document.createElement('span');
+    closeIcon.className='icon-s-multiply11';
+    close.appendChild(closeIcon);
+    close.addEventListener('click',function(e){ e.preventDefault(); closeMobileLoginChoices(); });
+    closeWrap.appendChild(close);
+
+    var heading=document.createElement('h4');
+    heading.setAttribute('aria-label','Login title');
+    heading.textContent=lang()==='ar'?'تسجيل الدخول':'Login';
+
+    var list=document.createElement('ul');
+    var entries=[
+      {id:1,text:lang()==='ar'?'دخول الأفراد':'Individuals Login'},
+      {id:2,text:lang()==='ar'?'دخول الأعمال':'Business Login'}
+    ];
+    entries.forEach(function(entry){
       var li=document.createElement('li');
       var a=document.createElement('a');
-      a.href=item.RouterLink;
-      a.rel='noopener';
-      var icon=document.createElement('span');
-      icon.className='loginItemIcon '+clean(item.Icon);
-      var desc=document.createElement('span');
-      desc.className='loginItemDesc';
-      desc.textContent=id===1?(lang()==='ar'?'دخول الأفراد':'Individuals Login'):(lang()==='ar'?'دخول الأعمال':'Business Login');
-      a.appendChild(icon); a.appendChild(desc); li.appendChild(a); list.appendChild(li);
+      a.target='_blank';
+      a.rel='noopener noreferrer';
+      a.href=platformUrl(entry.id);
+      a.title=entry.text;
+      a.textContent=entry.text;
+      li.appendChild(a);
+      list.appendChild(li);
     });
-    body.appendChild(list); popup.appendChild(header); popup.appendChild(body); model.appendChild(popup); document.body.appendChild(model);
-    if(typeof popup.animate==='function') popup.animate([{opacity:0,transform:'translateY(-8px) scale(.985)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:180,easing:'ease-out'});
+
+    box.appendChild(closeWrap);
+    box.appendChild(heading);
+    box.appendChild(list);
+    panel.appendChild(box);
+    document.body.appendChild(panel);
+
+    if(typeof box.animate==='function'){
+      box.animate(
+        [{opacity:0,transform:'translateY(-8px) scale(.985)'},{opacity:1,transform:'translateY(0) scale(1)'}],
+        {duration:180,easing:'ease-out'}
+      );
+    }
+    try{ close.focus({preventScroll:true}); }catch(_){ close.focus(); }
   }
 
   function openAmeen(){
@@ -1126,6 +1172,11 @@
     if(e.key==='Escape' && document.getElementById('localVerifyErrorModal')){
       e.preventDefault();
       closeErrorDialog();
+      return;
+    }
+    if(e.key==='Escape' && document.getElementById('loginPopUpBtns')){
+      e.preventDefault();
+      closeMobileLoginChoices();
       return;
     }
     if(e.key==='Escape' && document.getElementById('loginModel')){
