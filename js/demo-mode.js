@@ -1,9 +1,7 @@
 (function () {
   'use strict';
 
-  var OPEN_CLASS = 'demo-mobile-menu-open';
-
-  function isMobile() {
+  function isMobileLayout() {
     return window.matchMedia('(max-width: 992px)').matches;
   }
 
@@ -11,105 +9,161 @@
     return document.getElementById('slide-out');
   }
 
-  function overlay(create) {
-    var el = document.querySelector('.sidenav-overlay[data-local-mobile-overlay="1"]');
-    if (!el && create && document.body) {
-      el = document.createElement('div');
-      el.className = 'sidenav-overlay';
-      el.setAttribute('data-local-mobile-overlay', '1');
-      el.setAttribute('aria-hidden', 'true');
-      document.body.appendChild(el);
-    }
-    return el;
+  function jq() {
+    return window.jQuery || window.$ || null;
   }
 
-  function closeSubmenus() {
-    var d = drawer();
-    if (!d) return;
-    Array.prototype.forEach.call(d.querySelectorAll('li > a + ul, li > span + ul'), function (ul) {
-      var trigger = ul.previousElementSibling;
-      if (trigger) trigger.setAttribute('aria-expanded', 'false');
-      if (ul.getAttribute('data-local-language-list') === '1') {
-        ul.remove();
-        return;
-      }
-      ul.style.display = 'none';
-      ul.removeAttribute('data-demo-open');
-    });
+  function removeLocalLanguageList() {
+    var list = document.querySelector('#langsList[data-local-language-list="1"]');
+    if (list) list.remove();
+    var trigger = document.querySelector('#slide-out li.language .mobileHasSub');
+    if (trigger) trigger.setAttribute('aria-expanded', 'false');
   }
 
-  function setOpen(open) {
-    var d = drawer();
-    if (!d) return;
-    open = !!open && isMobile();
+  /* This is the same submenu rule used by the compiled Header component:
+     only one span.mobileHasSub submenu is open at a time. */
+  function toggleSubmenu(trigger) {
+    if (!trigger || !isMobileLayout()) return false;
+    if (trigger.closest('li.language')) return false; // handled by the language state
 
-    d.classList.toggle(OPEN_CLASS, open);
-    d.setAttribute('aria-hidden', open ? 'false' : 'true');
-
-    var o = overlay(open);
-    if (o) {
-      o.classList.toggle('is-open', open);
-      o.style.display = open ? 'block' : 'none';
-      o.style.opacity = open ? '1' : '0';
-    }
-
-    var trigger = document.getElementById('mobileMenu');
-    if (trigger) trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
-
-    var header = document.querySelector('header');
-    if (header) header.classList.toggle('headerStyle', open);
-
-    if (document.body) {
-      if (open) {
-        if (!document.body.hasAttribute('data-local-prev-overflow'))
-          document.body.setAttribute('data-local-prev-overflow', document.body.style.overflow || '');
-        document.body.style.overflow = 'hidden';
-      } else if (!document.getElementById('loginPopUpBtns')) {
-        var prev = document.body.getAttribute('data-local-prev-overflow');
-        document.body.style.overflow = prev || '';
-        document.body.removeAttribute('data-local-prev-overflow');
-      }
-    }
-
-    if (!open) closeSubmenus();
-  }
-
-  function toggleSubmenu(target) {
-    var trigger = target && target.closest ? target.closest('.mobileHasSub') : null;
-    if (!trigger || !isMobile()) return false;
     var d = drawer();
     if (!d || !d.contains(trigger)) return false;
     var menu = trigger.nextElementSibling;
     if (!menu || menu.tagName !== 'UL') return false;
 
-    var wasOpen = window.getComputedStyle(menu).display === 'block';
-    Array.prototype.forEach.call(d.querySelectorAll('li > span + ul'), function (ul) {
+    var open = window.getComputedStyle(menu).display === 'block';
+    Array.prototype.forEach.call(d.querySelectorAll('li > span.mobileHasSub + ul'), function (ul) {
       ul.style.display = 'none';
-      ul.removeAttribute('data-demo-open');
       var prev = ul.previousElementSibling;
       if (prev) prev.setAttribute('aria-expanded', 'false');
     });
 
-    if (!wasOpen) {
+    if (!open) {
       menu.style.display = 'block';
-      menu.setAttribute('data-demo-open', '1');
       trigger.setAttribute('aria-expanded', 'true');
     }
     return true;
   }
 
-  function initDrawer() {
+  function resetDrawerTop() {
     var d = drawer();
     if (!d) return;
-    d.setAttribute('aria-hidden', 'true');
-    closeSubmenus();
 
-    var trigger = document.getElementById('mobileMenu');
-    if (trigger) {
-      trigger.setAttribute('role', 'button');
-      trigger.setAttribute('tabindex', '0');
-      trigger.setAttribute('aria-controls', 'slide-out');
-      trigger.setAttribute('aria-expanded', 'false');
+    /* The captured DOM already contains these four original Angular blocks.
+       Never allow a previous internal drawer scroll position or a stale
+       inline display rule to make the drawer start from websiteControls. */
+    var fixedTop = d.querySelectorAll(':scope > .topLiMobileMenu, :scope > .mobileMainLinks, :scope > .websiteControls, :scope > .language');
+    Array.prototype.forEach.call(fixedTop, function (el) {
+      el.style.removeProperty('display');
+      el.style.removeProperty('visibility');
+    });
+
+    d.scrollTop = 0;
+    window.requestAnimationFrame(function () { d.scrollTop = 0; });
+  }
+
+  function nativeCloseSubmenus() {
+    var d = drawer();
+    if (!d) return;
+    Array.prototype.forEach.call(d.querySelectorAll('li > a.mobileHasSub + ul, li > span.mobileHasSub + ul'), function (ul) {
+      ul.style.display = 'none';
+      var prev = ul.previousElementSibling;
+      if (prev) prev.setAttribute('aria-expanded', 'false');
+    });
+    removeLocalLanguageList();
+  }
+
+  var usingNativeSidenav = false;
+
+  function initNativeSidenav() {
+    var $ = jq();
+    var d = drawer();
+    if (!d || !$ || !$.fn || typeof $.fn.sidenav !== 'function') return false;
+
+    try {
+      /* Recreate exactly the options used by Header.MobileSideNav() in the
+         bundled Angular main file instead of imitating Materialize. */
+      try {
+        var old = window.M && window.M.Sidenav && window.M.Sidenav.getInstance ? window.M.Sidenav.getInstance(d) : null;
+        if (old && typeof old.destroy === 'function') old.destroy();
+      } catch (_) {}
+
+      $('.sidenav').sidenav({
+        edge: 'right',
+        closeOnClick: false,
+        draggable: true,
+        onOpen: function () {
+          $('header').addClass('headerStyle');
+          resetDrawerTop();
+        },
+        onClose: function () {
+          $('header').removeClass('headerStyle');
+          $('.sidenav li > a').next('ul').slideUp();
+          $('.sidenav li > span').next('ul').slideUp();
+          window.setTimeout(function () {
+            removeLocalLanguageList();
+            resetDrawerTop();
+          }, 310);
+        }
+      });
+
+      $('a.mobileHasSub + ul>li>a, span.mobileHasSub + ul>li>a')
+        .off('click.gosiLocalNative')
+        .on('click.gosiLocalNative', function () { $('.sidenav').sidenav('close'); });
+
+      d.setAttribute('aria-hidden', 'true');
+      var trigger = document.getElementById('mobileMenu');
+      if (trigger) {
+        trigger.setAttribute('role', 'button');
+        trigger.setAttribute('tabindex', '0');
+        trigger.setAttribute('aria-controls', 'slide-out');
+      }
+
+      usingNativeSidenav = true;
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /* Fallback is only used if the bundled Materialize plugin cannot initialize.
+     It is deliberately isolated behind a class so it cannot override the
+     native sidenav's transform/width/gesture behavior. */
+  function fallbackSetOpen(open) {
+    var d = drawer();
+    if (!d) return;
+    open = !!open && isMobileLayout();
+    d.classList.add('local-sidenav-fallback');
+    d.classList.toggle('demo-mobile-menu-open', open);
+    d.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.querySelector('header')?.classList.toggle('headerStyle', open);
+    document.body.classList.toggle('bodyHideScroll', open);
+    if (open) resetDrawerTop();
+    else nativeCloseSubmenus();
+  }
+
+  function openDrawer() {
+    var $ = jq();
+    if (usingNativeSidenav && $) {
+      resetDrawerTop();
+      $('.sidenav').sidenav('open');
+    } else fallbackSetOpen(true);
+  }
+
+  function closeDrawer() {
+    var $ = jq();
+    if (usingNativeSidenav && $) $('.sidenav').sidenav('close');
+    else fallbackSetOpen(false);
+  }
+
+  function init() {
+    var d = drawer();
+    if (!d) return;
+    nativeCloseSubmenus();
+    resetDrawerTop();
+    if (!initNativeSidenav()) {
+      d.classList.add('local-sidenav-fallback');
+      d.setAttribute('aria-hidden', 'true');
     }
   }
 
@@ -117,37 +171,31 @@
     var t = e.target;
     if (!t || !t.closest) return;
 
-    var bannerClose = t.closest('.TaminatyMessage .remove-icon');
-    if (bannerClose) {
-      var banner = bannerClose.closest('.TaminatyMessage');
+    if (t.closest('.TaminatyMessage .remove-icon')) {
+      var banner = t.closest('.TaminatyMessage');
       if (banner) banner.style.setProperty('display', 'none', 'important');
       return;
     }
 
-    if (t.closest('#mobileMenu') && isMobile()) {
+    /* Materialize handles #mobileMenu itself when available. Only intercept
+       it in fallback mode. */
+    if (!usingNativeSidenav && t.closest('#mobileMenu') && isMobileLayout()) {
       e.preventDefault();
-      e.stopPropagation();
       var d = drawer();
-      setOpen(!(d && d.classList.contains(OPEN_CLASS)));
+      fallbackSetOpen(!(d && d.classList.contains('demo-mobile-menu-open')));
       return;
     }
 
-    if (t.closest('.closeMobileMenu') || t.closest('.sidenav-overlay[data-local-mobile-overlay="1"]')) {
+    if (t.closest('.closeMobileMenu')) {
       e.preventDefault();
-      setOpen(false);
+      closeDrawer();
       return;
     }
 
     var d = drawer();
     if (d && d.contains(t)) {
-      var childLink = t.closest('a');
-      if (childLink && childLink.closest('ul') && childLink.closest('ul').parentElement !== d &&
-          !childLink.classList.contains('mobileHasSub')) {
-        setOpen(false);
-        return;
-      }
-
-      if (toggleSubmenu(t)) {
+      var spanTrigger = t.closest('span.mobileHasSub');
+      if (spanTrigger && toggleSubmenu(spanTrigger)) {
         e.preventDefault();
         return;
       }
@@ -155,53 +203,35 @@
   }, false);
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') setOpen(false);
-    if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.id === 'mobileMenu') {
+    if (e.key === 'Escape' && drawer()) closeDrawer();
+    if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.id === 'mobileMenu' && !usingNativeSidenav) {
       e.preventDefault();
       var d = drawer();
-      setOpen(!(d && d.classList.contains(OPEN_CLASS)));
+      fallbackSetOpen(!(d && d.classList.contains('demo-mobile-menu-open')));
     }
   });
 
-  var touchStartX = null;
-  var touchMode = '';
-  document.addEventListener('touchstart', function (e) {
-    if (!isMobile() || !e.touches || e.touches.length !== 1) return;
-    var d = drawer();
-    if (!d) return;
-    var x = e.touches[0].clientX;
-    if (d.classList.contains(OPEN_CLASS) && d.contains(e.target)) {
-      touchStartX = x;
-      touchMode = 'close';
-    } else if (!d.classList.contains(OPEN_CLASS) && x >= window.innerWidth - 24) {
-      touchStartX = x;
-      touchMode = 'open';
-    }
-  }, {passive:true});
-
-  document.addEventListener('touchend', function (e) {
-    if (touchStartX == null || !touchMode || !e.changedTouches || !e.changedTouches.length) return;
-    var dx = e.changedTouches[0].clientX - touchStartX;
-    if (touchMode === 'close' && dx > 55) setOpen(false);
-    if (touchMode === 'open' && dx < -55) setOpen(true);
-    touchStartX = null;
-    touchMode = '';
-  }, {passive:true});
-
   window.addEventListener('resize', function () {
-    if (!isMobile()) setOpen(false);
+    if (!isMobileLayout()) closeDrawer();
   }, {passive:true});
 
   window.GosiLocalMobileNav = {
-    open: function () { setOpen(true); },
-    close: function () { setOpen(false); },
+    open: openDrawer,
+    close: closeDrawer,
     toggle: function () {
       var d = drawer();
-      setOpen(!(d && d.classList.contains(OPEN_CLASS)));
+      if (!d) return;
+      if (usingNativeSidenav && window.M && window.M.Sidenav) {
+        var inst = window.M.Sidenav.getInstance(d);
+        if (inst && inst.isOpen) closeDrawer(); else openDrawer();
+      } else {
+        fallbackSetOpen(!d.classList.contains('demo-mobile-menu-open'));
+      }
     },
-    closeSubmenus: closeSubmenus
+    closeSubmenus: nativeCloseSubmenus,
+    resetTop: resetDrawerTop
   };
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initDrawer, {once:true});
-  else initDrawer();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
+  else init();
 })();

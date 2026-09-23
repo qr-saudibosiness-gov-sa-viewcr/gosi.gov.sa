@@ -49,40 +49,34 @@
     overflow-wrap: anywhere !important;
   }
 
-  /* Keep Angular/Materialize's own open/close behavior. These rules only
-     constrain the drawer to the viewport. */
+  /* Materialize's original sidenav implementation is initialized from the
+     bundled scripts. Do not override its transform/width while it is active.
+     The fallback rules below are scoped to .local-sidenav-fallback only. */
   #slide-out.sidenav {
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  #slide-out.sidenav.local-sidenav-fallback {
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
     left: auto !important;
     width: 300px !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
     height: 100dvh !important;
-    box-sizing: border-box !important;
-    overflow-x: hidden !important;
     overflow-y: auto !important;
     transform: translateX(105%) !important;
     transition: transform .25s ease-out !important;
     z-index: 999 !important;
   }
 
-  #slide-out.sidenav.demo-mobile-menu-open {
+  #slide-out.sidenav.local-sidenav-fallback.demo-mobile-menu-open {
     display: block !important;
     transform: translateX(0) !important;
   }
 
-  .sidenav-overlay[data-local-mobile-overlay="1"] {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 998 !important;
-    background: rgba(0,0,0,.5) !important;
-    display: none;
-    opacity: 0;
-    transition: opacity .2s ease !important;
-  }
-  .sidenav-overlay[data-local-mobile-overlay="1"].is-open { display: block !important; opacity: 1 !important; }
 
   #localCertificateSuccess,
   .verifyECertificate .alert.alert-success,
@@ -154,5 +148,14 @@
     z-index: 1002 !important;
     max-height: 240px !important;
     overflow-y: auto !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #slide-out > .topLiMobileMenu,
+  #slide-out > .mobileMainLinks,
+  #slide-out > .websiteControls,
+  #slide-out > .language {
+    visibility: visible !important;
   }
 }
